@@ -239,7 +239,7 @@ class StartMenu extends MovieClip {
 >
 > ---
 
-#### Dependencies list :
+#### Dependencies list : SKIP THIS SECTION AS IT IS RELATED TO MY CUSTOM APPROACH ( which is not available yet )
 
 > ---
 > Note : *I renamed some of them, and renamed some of their properties and methods as well*.
