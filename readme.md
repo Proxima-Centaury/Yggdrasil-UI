@@ -22,7 +22,7 @@
 > 2. Install **Unreal Development Kit 2015**. There's no setup file here, content provided already unpacked, as-is, just extract the content in the location of your choice.
 > 3. Run **Adobe Flash Professional CS6**.
 > 4. In **Adobe Flash Professional CS6**, go to the following path : **Help > Manage extensions**. Should prompt you a window like this one :
-> ![Screenshot of Flash CS6 Pro extension manager.](/resources/screenshots/extension_manager.jpg)
+> ![Screenshot of Flash CS6 Pro extension manager.](/documentation/screenshots/extension_manager.jpg)
 > 
 > ---
 
