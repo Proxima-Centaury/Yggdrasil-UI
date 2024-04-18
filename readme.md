@@ -10,6 +10,7 @@
 > 4. **An online tool or any other software to design your own UI components or edit existing ones**. ( In my case, I'm using **Figma** )
 >
 > You'll find download links / resources at the end of this file.
+> 
 > ---
 
 #### Project understanding :
