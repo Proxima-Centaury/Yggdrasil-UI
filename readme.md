@@ -23,6 +23,18 @@
 > 3. Run **Adobe Flash Professional CS6**.
 > 4. In **Adobe Flash Professional CS6**, go to the following path : **Help > Manage extensions**. Should prompt you a window like this one :
 > ![Screenshot of Flash CS6 Pro extension manager.](/documentation/screenshots/extension_manager.jpg)
+> 5. Click **Install**, then browse to your **Unreal Development Kit 2015** install location and find **Scaleform Extensions.mxp** located in **UDK 2015-01/Binaries/GFx/CLIK Tools**, once found, click on the file to install **Scaleform Extensions**.
+> 6. Restart **Adobe Flash Professional CS6**.
+> 7. In **Adobe Flash Professional CS6**, go to the following path : **Edit > Preferences > ActionScript** and click on **ActionScript 2.0 parameters** button here :
+> ![Screenshot of Flash CS6 Pro ActionScript settings.](/documentation/screenshots/actionscript_settings.jpg)
+> 8. A window like this one should open :
+> ![Screenshot of Flash CS6 Pro ActionScript settings.](/documentation/screenshots/actionscript_classes.jpg)
+> 9. Click the **+** sign and add the following path : **{REPLACE THIS WITH YOUR DRIVE AND PARENT FOLDERS EVENTUALLY}/UDK 2015-01/Development/Flash/AS2/CLIK**. Replace the the text inside the braces with your **Unreal Development Kit 2015** drive location, **C:/** or whatever and eventually the parent folder IF **UDK 2015-01/** folder is **INSIDE ANOTHER FOLDER**, then removes the braces as well. When done, click ok, the window will close.
+> 10. Have a look at the right panel in **Adobe Flash Professional CS6**. If you can't find a section called **Scaleform Launcher**, you will need to go to the following path : **Window > Other Panels** and click on **Scaleform Launcher**, now it should appear on **Adobe Flash Professional CS6** right panel.
+> 11. Now you should be able to bind GFX Player to **Adobe Flash Professional CS6**. In **Scaleform Launcher** section on the right panel, click on the **+** sign, it will open a small window with 3 inputs.
+> 12. In the first input, click on the **+** sign and go to your **Unreal Development Kit 2015** installation, then go to the following path : **UDK 2015-01/Binaries/GFx** and select **GFxMediaPlayerD3d9.exe**, it will ask you to choose a name for the player, I suggest typing **GFxMediaPlayer**.
+> 13. In the second input, enter a profile name for your player profile, you can type whatever you want.
+> 14. Leave the third input as it is, then click **OK**, you should be able to simulate in-game behaviors now by click on **Test with : GFxMediaPlayer** after selecting your profile in the dropdown below ( may have some limitations though, not sure, you'll have to test it by yourself until I provide more informations about that ).
 > 
 > ---
 
