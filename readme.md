@@ -31,9 +31,11 @@
   - Restart **Adobe Flash Professional CS6**.
 - In **Adobe Flash Professional CS6**, go to the following path :
   - **Edit > Preferences > ActionScript** and click on **ActionScript 2.0 parameters** button here : [screenshot.](/documentation/screenshots/actionscript_settings.jpg)
+  - **Edit > Preferences > ActionScript** and click on **ActionScript 3.0 parameters** as well if you want to give it a try.
   - A window like this one should open : [screenshot.](/documentation/screenshots/actionscript_classes.jpg)
   - Click the **+** sign and add the following path :
-    - **{REPLACE THIS WITH YOUR DRIVE AND PARENT FOLDERS EVENTUALLY}/UDK 2015-01/Development/Flash/AS2/CLIK**.
+    - **{REPLACE THIS WITH YOUR DRIVE AND PARENT FOLDERS EVENTUALLY}/UDK 2015-01/Development/Flash/AS2/CLIK** ( For ActionScript 2.0 **ONLY** ).
+    - **{REPLACE THIS WITH YOUR DRIVE AND PARENT FOLDERS EVENTUALLY}/UDK 2015-01/Development/Flash/AS3/CLIK** ( For ActionScript 3.0 **ONLY** ).
     - **/!\\** Replace the the text inside the braces with your **Unreal Development Kit 2015** drive location, **C:/** or whatever.
     - **/!\\** And eventually add parent folders IF **UDK 2015-01** folder is **INSIDE ANOTHER FOLDER**, then remove the braces as well.
   - When done, click **OK**, the window will close.
