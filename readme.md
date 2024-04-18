@@ -5,9 +5,11 @@
 
 > ---
 > 1. **Adobe Flash Professional CS4 up to CS6**. ( I suggest you to use that last version **CS6** )
-> 2. **A Flash decompiler**. ( You can pick **JPEXs Free Flash Decompiler** from GitHub )
-> 3. **An online tool or any other software to design your own UI components or edit existing ones**. ( In my case, I'm using **Figma** )
+> 2. **Unreal Development Kit 2015**. ( Contains GFX Extensions, CLIK files / GFX Player )
+> 3. **A Flash decompiler**. ( You can pick **JPEXs Free Flash Decompiler** from GitHub )
+> 4. **An online tool or any other software to design your own UI components or edit existing ones**. ( In my case, I'm using **Figma** )
 >
+> You'll download links / resources at the end of this file.
 > ---
 
 #### Project understanding :
@@ -272,6 +274,7 @@ class StartMenu extends MovieClip {
 
 Tools :
 - [Adobe Flash Professional CS6](https://www.mediafire.com/file/fiylko26035lrxb/Adobe_Flash_Professional_CS6_%2528_Version_12.0.0.481_%2529.rar/file) <s>( Have a look at my [Yggdrasil UI](https://www.nexusmods.com/skyrimspecialedition/mods/108880?tab=files) mod page for the tool )</s>
+- [Unreal Development Kit 2015](https://www.mediafire.com/file/2j7gvobo8sxnlg1/Unreal_Development_Kit_2015.rar/file)
 - [JPEXs Free Flash Decompiler ( Windows )](https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version20.1.0/ffdec_20.1.0_setup.exe)
 - [JPEXs Free Flash Decompiler ( Linux )](https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version20.1.0/ffdec_20.1.0.deb)
 - [JPEXs Free Flash Decompiler ( MacOS )](https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version20.1.0/ffdec_20.1.0.pkg)
