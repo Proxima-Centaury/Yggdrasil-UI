@@ -24,17 +24,14 @@
   - There's no setup file here, content provided already unpacked, as-is, just extract the content in the location of your choice.
 - Run **Adobe Flash Professional CS6**.
 - In **Adobe Flash Professional CS6**, go to the following path :
-  - **Help > Manage extensions**. Should prompt you a window like this one :
-  ![Screenshot of Flash CS6 Pro extension manager.](/documentation/screenshots/extension_manager.jpg)
+  - **Help > Manage extensions**. Should prompt you a window like this one : [screenshot.](/documentation/screenshots/extension_manager.jpg)
 - Click **Install**, then browse to your **Unreal Development Kit 2015** install location.
   - Find **Scaleform Extensions.mxp** located in **UDK 2015-01/Binaries/GFx/CLIK Tools**.
   - Click on the file to install **Scaleform Extensions**.
   - Restart **Adobe Flash Professional CS6**.
 - In **Adobe Flash Professional CS6**, go to the following path :
-  - **Edit > Preferences > ActionScript** and click on **ActionScript 2.0 parameters** button here :
-  ![Screenshot of Flash CS6 Pro ActionScript settings.](/documentation/screenshots/actionscript_settings.jpg)
-  - A window like this one should open :
-  ![Screenshot of Flash CS6 Pro ActionScript settings.](/documentation/screenshots/actionscript_classes.jpg)
+  - **Edit > Preferences > ActionScript** and click on **ActionScript 2.0 parameters** button here : [screenshot.](/documentation/screenshots/actionscript_settings.jpg)
+  - A window like this one should open : [screenshot.](/documentation/screenshots/actionscript_classes.jpg)
   - Click the **+** sign and add the following path :
     - **{REPLACE THIS WITH YOUR DRIVE AND PARENT FOLDERS EVENTUALLY}/UDK 2015-01/Development/Flash/AS2/CLIK**.
     - **/!\\** Replace the the text inside the braces with your **Unreal Development Kit 2015** drive location, **C:/** or whatever.
