@@ -122,7 +122,7 @@ So, to sum up things, just remember the followings :
 - You cannot interact with UI components without adding **Scripts** to them.
 
 ````markdown
-* 3 : You'll find a precious tutorial on how to use **Adobe Flash Professional CS6** at the end.
+* 3 : You'll find a precious tutorial on how to use **Adobe Flash Professional CS6** at the end. #NOT_AVAILABLE_YET
 ````
 
 ### ActionScript Understanding
@@ -220,7 +220,7 @@ class StartMenu extends MovieClip {
 > ---
 
 ````markdown
-* 4 : You'll find another precious tutorial on **ActionScript** scripting at the end.
+* 4 : You'll find another precious tutorial on **ActionScript** scripting at the end. #NOT_AVAILABLE_YET
 ````
 
 ### Project Dependencies & Explanations
@@ -303,7 +303,7 @@ class StartMenu extends MovieClip {
 > ---
 
 ````markdown
-* 5 : You'll find other **.md** files in this repository, providing more explanations for each class.
+* 5 : You'll find other **.md** files in this repository, providing more explanations for each class. #NOT_AVAILABLE_YET
 * 6 : That's all for the introduction, see below for some download links.
 ````
 
