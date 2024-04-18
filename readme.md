@@ -8,10 +8,12 @@
 > 2. **Unreal Development Kit 2015**. ( Contains GFX Extensions, CLIK files / GFX Player )
 > 3. **A Flash decompiler**. ( You can pick **JPEXs Free Flash Decompiler** from GitHub )
 > 4. **An online tool or any other software to design your own UI components or edit existing ones**. ( In my case, I'm using **Figma** )
->
-> You'll find download links / resources at the end of this file.
 > 
 > ---
+
+````markdown
+* 0 : You'll find download links and resources at the end of this file.
+````
 
 #### Project understanding :
 
