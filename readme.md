@@ -4,10 +4,10 @@
 #### Tools you will need to achieve your UI overhauls :
 
 > ---
-> 1. **Adobe Flash Professional CS4 up to CS6**. ( I suggest you to use that last version **CS6** )
-> 2. **Unreal Development Kit 2015**. ( Contains GFX Extensions, CLIK files / GFX Player )
-> 3. **A Flash decompiler**. ( You can pick **JPEXs Free Flash Decompiler** from GitHub )
-> 4. **An online tool or any other software to design your own UI components or edit existing ones**. ( In my case, I'm using **Figma** )
+> 1. **Adobe Flash Professional CS4 up to CS6** ( I suggest you to use that last version **CS6** ).
+> 2. **Unreal Development Kit 2015** ( Contains GFX Extensions, CLIK files / GFX Player ).
+> 3. **A Flash decompiler** ( You can pick **JPEXs Free Flash Decompiler** from GitHub ).
+> 4. **An online tool or any other software to design your own UI components or edit existing ones** ( In my case, I'm using **Figma** ).
 > 
 > ---
 
@@ -24,15 +24,15 @@
   - There's no setup file here, content provided already unpacked, as-is, just extract the content in the location of your choice.
 - Run **Adobe Flash Professional CS6**.
 - In **Adobe Flash Professional CS6**, go to the following path :
-  - **Help > Manage extensions**. Should prompt you a window like this one : [screenshot.](/documentation/screenshots/extension_manager.jpg)
+  - **Help > Manage extensions**. Should prompt you a window like this one : [screenshot.](/documentation/screenshots/extension_manager.jpg).
 - Click **Install**, then browse to your **Unreal Development Kit 2015** install location.
   - Find **Scaleform Extensions.mxp** located in **UDK 2015-01/Binaries/GFx/CLIK Tools**.
   - Click on the file to install **Scaleform Extensions**.
   - Restart **Adobe Flash Professional CS6**.
 - In **Adobe Flash Professional CS6**, go to the following path :
-  - **Edit > Preferences > ActionScript** and click on **ActionScript 2.0 parameters** button here : [screenshot.](/documentation/screenshots/actionscript_settings.jpg)
+  - **Edit > Preferences > ActionScript** and click on **ActionScript 2.0 parameters** button here : [screenshot.](/documentation/screenshots/actionscript_settings.jpg).
   - **Edit > Preferences > ActionScript** and click on **ActionScript 3.0 parameters** as well if you want to give it a try.
-  - A window like this one should open : [screenshot.](/documentation/screenshots/actionscript_classes.jpg)
+  - A window like this one should open : [screenshot.](/documentation/screenshots/actionscript_classes.jpg).
   - Click the **+** sign and add the following path :
     - **{REPLACE THIS WITH YOUR DRIVE AND PARENT FOLDERS EVENTUALLY}/UDK 2015-01/Development/Flash/AS2/CLIK** ( For ActionScript 2.0 **ONLY** ).
     - **{REPLACE THIS WITH YOUR DRIVE AND PARENT FOLDERS EVENTUALLY}/UDK 2015-01/Development/Flash/AS3/CLIK** ( For ActionScript 3.0 **ONLY** ).
@@ -62,7 +62,7 @@
 >
 > When you open your first **.fla** file, using **Adobe Flash Professional CS4 or CS6** ( preferably ), it will prompt you a **Scene**.
 >
-> The **Scene** element is the root of an interface, it will hold your created **child components**. ( see **[scene container details](#scene-container-details) section** for more informations )
+> The **Scene** element is the root of an interface, it will hold your created **child components** ( see **[scene container details](#scene-container-details-) section** for more informations ).
 >
 > ---
 
@@ -90,7 +90,7 @@
 >
 > Once you made sure the parameters were set properly, you can choose the **.swf file output location**, and then you can press **Ok** or **Publish**, note that once this step is done, you'll be able to publish and test your UIs by using **CTRL+Enter** shortcut.
 >
-> This will create a **.swf** file. ( By the way, don't change the base game's **.swf** file names, this could brake your UIs in game, note that it's not the case for custom created UIs, you'll be able to name them as you wish since they're built from the ground )
+> This will create a **.swf** file ( By the way, don't change the base game's **.swf** file names, this could brake your UIs in game, note that it's not the case for custom created UIs, you'll be able to name them as you wish since they're built from the ground ).
 >
 > Now that you have your **.swf** file, you can put it in the base game **/Interface** folder, or create a mod of it and install it through a mod manager using the same game folder path.
 >
@@ -130,7 +130,7 @@ So, to sum up things, just remember the followings :
 #### Why do you need ActionScript to make things happen :
 
 > ---
-> **ActionScript** is a programming language based on **ECMAScript**. ( similar to **JavaScript** if you're a fullstack or front web developer, this may ring a bell in your head )
+> **ActionScript** is a programming language based on **ECMAScript** ( similar to **JavaScript** if you're a fullstack or front web developer, this may ring a bell in your head ).
 >
 > This language is used to bring UI elements ( built using tool's features or **.png**, **.bmp**, and similar files ) to life.
 >
@@ -160,8 +160,8 @@ So, to sum up things, just remember the followings :
 > ---
 
 ````javascript
-// "extends Movie Clip" is a way to tell to our UI that this class is bound to a Movie Clip.
-// That way you'll be able to access MovieClip's built-in properties and functions.
+// The "extends MovieClip" is a way to tell to our UI that this class is bound to a MovieClip.
+// That way you'll be able to access MovieClip's built-in properties and functions such as "gotoAndPlay()", "gotoAndStop()", "stop()", "attachMovie()" and so on.
 class PressStart extends MovieClip {
 
     // Code goes here.
@@ -170,32 +170,28 @@ class PressStart extends MovieClip {
 ````
 
 > ---
-> Note that there are many other approaches, this is just an example, an other approach would be something like the following. ( **see below** )
+> Note that there are many other approaches, this is just an example, an other approach would be something like the following ( **see below** ).
 >
 > ---
 
 ````javascript
-// Let's pretend we've created a "StartMenu" MovieClip that holds multiple child components,
-// such as "PressStart" and "MainMenu".
-
-// You would create your "StartMenu" class,
-// and then access your "PressStart" and "MainMenu" MovieClips directly from the parent.
-// ( which is StartMenu in this case )
+// Let's pretend we've created a "StartMenu" MovieClip that holds multiple child components, such as "PressStart" and "MainMenu".
+// You'd create your "StartMenu" class, and then access your "PressStart" and "MainMenu" MovieClips directly from the parent ( which is StartMenu in this case ).
 
 class StartMenu extends MovieClip {
     
     // First of all, we declare our child components like so.
     public var PressStartMovieClip: MovieClip;
     public var MainMenuMovieClip: MovieClip;
-    
-    // Then we can access them using "this.PressStartMovieClip" and "this.MainMenuMovieClip"
-    // without the quotes of course.
-    
-    // Note that the variables names were set through Adobe Flash Professional CS6's interface,
-    // in the component's properties section. ( Not the properties context menu )
-    
-    // You can put any name you want, just make sure to do it through Adobe Flash Professional CS6
-    // and use the same names in your code.
+
+    // Then we can access them using "this.PressStartMovieClip" and "this.MainMenuMovieClip" without the quotes of course.
+    // Note : The variables ( names ) were set through Adobe Flash Professional CS6's interface, in the component's properties section ( not the properties context menu ).
+    // You can put any name you want, just make sure to do it through Adobe Flash Professional CS6 and use the same names in your code.
+
+    // Below, you can find the class constructor, this function runs when the component is loaded.
+    public function StartMenu() {
+
+    };
 
 };
 ````
@@ -297,7 +293,7 @@ class StartMenu extends MovieClip {
 >
 > Here, I'll provide a different approach ( but still not so different than the vanilla tree ), just that it made more sense to me in the way I'm about to present it to you.
 >
-> You'll find out more by checking this repository's files, everything will be explained. ( as much as I can explain it of course )
+> You'll find out more by checking this repository's files, everything will be explained ( as much as I can explain it of course ).
 >
 > ---
 
