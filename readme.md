@@ -184,6 +184,7 @@ class PressStart extends MovieClip {
 class StartMenu extends MovieClip {
     
     // First of all, we declare our child components like so.
+    // /!\ Note : IMPORTANT ! To access your child components in ActionScript, you have to make sure you added them as well in Flash CS6 inside of "StartMenu" MovieClip !
     public var PressStartMovieClip: MovieClip;
     public var MainMenuMovieClip: MovieClip;
 
@@ -277,7 +278,7 @@ class StartMenu extends MovieClip {
             // -> this._currentframe; This is a built-in property.
             // -> this.stop(); This is a built-in function.
             // -> clearTimeout(); This is a built-in function.
-            
+
             // ---------------------------------------------------------------------------------------------------------------------------------------
         };
 
