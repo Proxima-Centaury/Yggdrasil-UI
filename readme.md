@@ -297,11 +297,13 @@ class StartMenu extends MovieClip {
 #### How to make sure the interface works :
 
 > ---
-> You can test your interfaces after **publishing** them, this will open a window with your interfaces running, you'll be able to interact with your interface with some limitations.
+> You can test your interfaces after **publishing** with **CTRL+Enter** if **YOU ARE NOT USING GFX PLAYER**, this will open a window with your interfaces running, you'll be able to interact with your interface with some limitations.
 >
 > For example, game data will obviously not load in **Adobe Flash Professional CS6**, you'll be able to interact with your UIs with placeholder texts and variables.
 >
 > When you've tested your UIs, and made sure there's no compiling errors, you can test them in-game to check if your texts and string variables are filled with game data or not.
+>
+> You can also test your interfaces with **GFX Player** that provides **more features and controller support** than built-in **Adobe Flash Professional CS6**'s player.
 >
 > It's all about :
 > 1. Designing UI components and moving them to your **.fla** file.
