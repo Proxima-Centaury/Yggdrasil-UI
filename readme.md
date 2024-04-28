@@ -159,8 +159,10 @@ So, to sum up things, just remember the followings :
 > Example :
 >
 > For example, if I want to create a **Press Start** interface in **startmenu.swf**, I would create a new **Movie Clip** named **Press Start**.
->
 > Then, I will create a **PressStart.as** file which is the extension for **ActionScript** files ( **.as** ), create a class named **PressStart** inside of it.
+> Next, I'd right click over my new **Movie Clip** named **Press Start**, go to its properties and write the name of the **PressStart** file inside of the **class field**.
+> You also fill the field just above **class** as it stands for the **ActionScript linking**, allowing to bind your **ActionScript class** to the **Movie Clip**, for this example, I'll name **InterfaceObject**.
+> This is required to let **Flash** register everything as intended with the following code : **Object.registerClass("InterfaceObject", Interface);**.
 >
 > ---
 
