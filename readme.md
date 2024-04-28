@@ -235,7 +235,7 @@ class StartMenu extends MovieClip {
 
                 this.stop(); // Stops the animation.
 
-                // The "onAnimationEnd" variable contains a boolean ( 0 or 1 / false or true ) that tells me whether a component has an end to its current animation or not.
+                // The "onAnimationEnd" variable contains a boolean ( 0 or 1 / false or true ) that tells me whether a component has an animation end action that needs to be triggered or not.
                 // I decided myself to assign endings to custom animations stored as "objects" with other data to ease the animations manipulation.
 
                 if(onAnimationEnd) {
