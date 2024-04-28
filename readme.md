@@ -33,6 +33,7 @@
   - **Edit > Preferences > ActionScript** and click on **ActionScript 2.0 parameters** button here : [screenshot.](/documentation/screenshots/actionscript_settings.jpg).
   - **Edit > Preferences > ActionScript** and click on **ActionScript 3.0 parameters** as well if you want to give it a try.
   - A window like this one should open : [screenshot.](/documentation/screenshots/actionscript_classes.jpg).
+    - The window will be different for **ActionScript 3.0 parameters**, just focus on the first field to add external scripts.
   - Click the **+** sign and add the following path :
     - **{REPLACE THIS WITH YOUR DRIVE AND PARENT FOLDERS EVENTUALLY}/UDK 2015-01/Development/Flash/AS2/CLIK** ( For ActionScript 2.0 **ONLY** ).
     - **{REPLACE THIS WITH YOUR DRIVE AND PARENT FOLDERS EVENTUALLY}/UDK 2015-01/Development/Flash/AS3/CLIK** ( For ActionScript 3.0 **ONLY** ).
