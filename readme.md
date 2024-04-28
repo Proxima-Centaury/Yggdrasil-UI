@@ -15,7 +15,7 @@
 * 0 : You'll find download links and resources at the end of this file.
 ````
 
-#### Adobe Flash CS6 + GFX setup :
+#### Adobe Flash Professional CS6 + GFX setup :
 
 - Install **Adobe Flash Professional CS6**.
   - You will find a crack inside of the archive as well with an **Instructions.txt**.
@@ -87,9 +87,13 @@
 #### Project building :
 
 > ---
-> To be able to see your UIs in game, you will need to convert your **.fla** files to **.swf** files. To do so, go to **File > Publishing parameters** and make sure the **target** is set to **Flash Player 11.2** and the **script** to **ActionScript 2.0**.
+> To be able to see your UIs in game, you will need to convert your **.fla** files to **.swf** files. To do so, go to **File > Publishing parameters** and make sure the **target** is set to **Flash Player 11.2** and the **script** to **ActionScript 2.0**. Once you made sure the parameters were set properly, you can choose the **.swf file output location**, and then you can press **Ok**.
 >
-> Once you made sure the parameters were set properly, you can choose the **.swf file output location**, and then you can press **Ok** or **Publish**, note that once this step is done, you'll be able to publish and test your UIs by using **CTRL+Enter** shortcut.
+> If **YOU ARE NOT USING GFX PLAYER**, do the following :
+> After setting the parameters as mentioned above, you can press **CTRL+Enter** to compile your projects to **.swf**.
+>
+> If **YOU ARE USING GFX PLAYER** :
+> Your projects will be converted to **.swf** automatically when you test your UIs through the player on **Adobe Flash Professional CS6**'s right panel.
 >
 > This will create a **.swf** file ( By the way, don't change the base game's **.swf** file names, this could brake your UIs in game, note that it's not the case for custom created UIs, you'll be able to name them as you wish since they're built from the ground ).
 >
@@ -185,7 +189,7 @@ class PressStart extends MovieClip {
 class StartMenu extends MovieClip {
     
     // First of all, we declare our child components like so.
-    // /!\ Note : IMPORTANT ! To access your child components in ActionScript, you have to make sure you added them as well in Flash CS6 inside of "StartMenu" MovieClip !
+    // /!\ Note : IMPORTANT ! To access your child components in ActionScript, you have to make sure you added them as well in Adobe Flash Professional CS6 inside of "StartMenu" MovieClip !
     public var PressStartMovieClip: MovieClip;
     public var MainMenuMovieClip: MovieClip;
 
@@ -199,7 +203,7 @@ class StartMenu extends MovieClip {
 
         // Here's and example that shows you how to trigger an animation on a child component.
         // The value "10" here stands for the frame where the animation starts.
-        // Note : Assuming you created an animation on Flash CS6 starting at frame 10 on the targeted child component.
+        // Note : Assuming you created an animation on Adobe Flash Professional CS6 starting at frame 10 on the targeted child component.
 
         this.PressStartMovieClip.gotoAndPlay(10);
 
@@ -229,7 +233,7 @@ class StartMenu extends MovieClip {
 
                 if(onAnimationEnd) {
 
-                    // The "selectedAnimation" variable is an object with various data representing an animation in Flash CS6.
+                    // The "selectedAnimation" variable is an object with various data representing an animation in Adobe Flash Professional CS6.
                     // Example of selectedAnimation : { label: "Loading ( Start )", frames: [ 1, 30 ], onAnimationEnd: [ "PressStart", "displayPressStartMenu" ] }.
 
                     var onAnimationEndData: Object = selectedAnimation.onAnimationEnd; // Stores the "selectedAnimation.onAnimationEnd" data.
