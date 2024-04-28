@@ -156,15 +156,20 @@ So, to sum up things, just remember the followings :
 >
 > When you create a new UI component in **Adobe Flash Professional CS6**, you can bind an **ActionScript Class** to it through the component's properties context menu.
 >
-> Example :
->
-> For example, if I want to create a **Press Start** interface in **startmenu.swf**, I would create a new **Movie Clip** named **Press Start**.
-> Then, I will create a **PressStart.as** file which is the extension for **ActionScript** files ( **.as** ), create a class named **PressStart** inside of it.
-> Next, I'd right click over my new **Movie Clip** named **Press Start**, go to its properties and write the name of the **PressStart** file inside of the **class field**.
-> You also fill the field just above **class** as it stands for the **ActionScript linking**, allowing to bind your **ActionScript class** to the **Movie Clip**, for this example, I'll name **InterfaceObject**.
-> This is required to let **Flash** register everything as intended with the following code : **Object.registerClass("InterfaceObject", Interface);**.
->
 > ---
+
+
+##### Examples :
+For example, if I want to create a **Press Start** interface in **startmenu.swf** :
+1. Create a new **Movie Clip** named **Press Start**.
+2. Create a **PressStart.as** file ( **.as** is the extension for **ActionScript** files ).
+3. Create a **class** named **PressStart** inside of **PressStart.as** file.
+4. Right click on the **Movie Clip** named **Press Start**.
+5. Go to its properties and write the name of the **PressStart** file inside of the **class** field.
+6. Fill the field right above **class** as it stands for the **ActionScript linking**.
+    - Allows to bind your **ActionScript class** to the **Movie Clip**.
+    - For this example, I'll name it **PressStartObject**.
+    - This is required to let **Flash** register everything as intended ( **Object.registerClass("PressStartObject", PressStart);** ).
 
 ````javascript
 // The "extends MovieClip" is a way to tell to our UI that this class is bound to a MovieClip.
