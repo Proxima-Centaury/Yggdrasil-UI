@@ -29,7 +29,7 @@ The tools required for UI development in Skyrim are as follows :
 
 2. Install **Unreal Development Kit 2015**.
 	- There's no setup file here, content provided already unpacked, as-is, just extract the content in the location of your choice.
-	- For example `C:/Tools/Unreal Development Kit 2015`
+	- For example `C:/Tools/Unreal Development Kit 2015`.
 
 3. Configure **Adobe Flash Professional CS6**.
 	- Run **Adobe Flash Professional CS6**.
@@ -51,7 +51,7 @@ The tools required for UI development in Skyrim are as follows :
 
    		1. Click the plus sign to add a new **class**.
 		2. Browse the following path, assuming you have followed the tutorial :
-		`C:/Tools\Unreal Development Kit 2015/UDK 2015-01/Development/Flash/AS2/CLIK`
+		`C:/Tools\Unreal Development Kit 2015/UDK 2015-01/Development/Flash/AS2/CLIK`.
 			- Depending on how you extracted the file, the `UDK 2015-01` folder might be inside another folder, adjust accordingly.
 		3. Press `Ok`, the window should automatically close.
 	- Go to the following path : `Window > Other Panels` and click on **Scaleform Launcher**.
@@ -69,7 +69,7 @@ The tools required for UI development in Skyrim are as follows :
 		![Scaleform Launcher profile](/docs/resources/media/scaleform_launcher_profile.png)
 
    	- If everything is as it should, click `Ok`.
-	- You can now test your UI behaviors by starting the **Scaleform Launcher** from the right panel and select `Test with : GFxMediaPlayer`:
+	- You can now test your UI behaviors by starting the **Scaleform Launcher** from the right panel and select `Test with : GFxMediaPlayer` :
  
  		![Scaleform Launcher Test](/docs/resources/media/scaleform_launcher_test.png)
    
@@ -174,7 +174,6 @@ So, to sum up things, just remember the followings :
 > ---
 
 ## Project Dependencies & Explanations
----
 
 ### Dependencies :
 
