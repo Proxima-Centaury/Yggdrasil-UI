@@ -53,7 +53,9 @@ The tools required for UI development in Skyrim are as follows :
 		3. Press `Ok`, the window should automatically close.
 	- Go to the following path : `Window > Other Panels` and click on **Scaleform Launcher**.
 		- A new window should open, which you can then drag into Adobe CS6's right panel for easier access, like so :
+
 		https://github.com/MissCorruption/Yggdrasil-UI/assets/125442561/c396ec2f-7627-4c05-8905-1a9db71147fe
+
   	- In **Scaleform Launcher** section on the right panel, click on the **+** sign, it will open a small window with **3 inputs**.
   	- In the first input, click on the **+** sign and go to your **Unreal Development Kit 2015** installation, then go to the following path : `UDK 2015-01/Binaries/GFx`.
 		- Select **GFxMediaPlayerD3d9.exe**, it will ask you to choose a name for the player, I suggest typing **GFxMediaPlayer**.
