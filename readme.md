@@ -51,7 +51,7 @@ The tools required for UI development in Skyrim are as follows:
 	- Go to the following path **Window > Other Panels** and click on **Scaleform Launcher**
 		- A new window should open, which you can then drag into Adobe CS6's right panel for easier access, like so:
 		
-			![Scaleform Launcher Right Panel](/docs/resources/media/Scaleform-Launcher.webm)
+			![Scaleform Launcher Right Panel](/docs/resources/media/Scaleform-Launcher.mov)
 	
   	- In **Scaleform Launcher** section on the right panel, click on the **+** sign, it will open a small window with **3 inputs**.
   	- In the first input, click on the **+** sign and go to your **Unreal Development Kit 2015** installation, then go to the following path :
