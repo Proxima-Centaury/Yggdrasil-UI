@@ -40,10 +40,14 @@ The tools required for UI development in Skyrim are as follows:
 		- Cs6 will inform you that it needs to restart for changes to apply, do that.
 
 	- In **Adobe Flash Professional CS6** go to the following settings -> **Edit > Preferences > ActionScript** and click on **ActionScript 2.0 parameters** button here:
-	![Actionscript Settings](/docs/resources/media/actionscript_settings.png)
+
+   		![Actionscript Settings](/docs/resources/media/actionscript_settings.png)
+   	
 	- A new window should open, you'd want to input the paths for the UDK Flash files for Action Script 2 by hitting the plus sign like so:
-	![Actionscript Classes](/docs/resources/media/actionscript_classes.png)
-		1. Click the plus sign to add a new class
+
+		![Actionscript Classes](/docs/resources/media/actionscript_classes.png)
+
+   		1. Click the plus sign to add a new class
 		2. Browse the following path, assuming you have followed the tutorial:
 		`C:/Tools\Unreal Development Kit 2015/UDK 2015-01/Development/Flash/AS2/CLIK`
 			- Depending on how you extracted the file, the `UDK 2015-01` folder might be inside another folder, adjust accordingly.
@@ -51,7 +55,9 @@ The tools required for UI development in Skyrim are as follows:
 	- Go to the following path **Window > Other Panels** and click on **Scaleform Launcher**
 		- A new window should open, which you can then drag into Adobe CS6's right panel for easier access, like so:
 		
-			![Scaleform Launcher Right Panel](/docs/resources/media/Scaleform-Launcher.mov)
+		https://github.com/MissCorruption/Yggdrasil-UI/assets/125442561/c396ec2f-7627-4c05-8905-1a9db71147fe
+
+
 	
   	- In **Scaleform Launcher** section on the right panel, click on the **+** sign, it will open a small window with **3 inputs**.
   	- In the first input, click on the **+** sign and go to your **Unreal Development Kit 2015** installation, then go to the following path :
@@ -59,11 +65,15 @@ The tools required for UI development in Skyrim are as follows:
   	- In the second input, enter a profile name for your player profile, you can type whatever you want.
 	- Leave the third input untouched.
 	- It should look something like this:
-	![Scaleform Launcher profile](/docs/resources/media/scaleform-launcher-profile.png)
-  	- If everything is as it should, click `Ok`.
+
+		![Scaleform Launcher profile](/docs/resources/media/scaleform-launcher-profile.png)
+
+   	- If everything is as it should, click `Ok`.
 	- You can now test your UI behaviors by starting the Scaleform Launcher from the right panel and select `Test with: GFxMediaPlayer`:
-	![Scaleform Launcher Test](/docs/resources/media/scaleform_launcher_test.png)
-		- This may have some limitations, you'll have to test around yourself until I can provide more information.
+	
+ 		![Scaleform Launcher Test](/docs/resources/media/scaleform_launcher_test.png)
+	
+ 		- This may have some limitations, you'll have to test around yourself until I can provide more information.
 
 ## Understanding interfaces and SWFs
 
