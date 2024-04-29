@@ -1,56 +1,73 @@
-### UI Development Understanding
+# UI Development Understanding
 ---
 
-#### Tools you will need to achieve your UI overhauls :
+## Required tools:
 
-> ---
-> 1. **Adobe Flash Professional CS4 up to CS6** ( I suggest you to use that last version **CS6** ).
-> 2. **Unreal Development Kit 2015** ( Contains GFX Extensions, CLIK files / GFX Player ).
-> 3. **A Flash decompiler** ( You can pick **JPEXs Free Flash Decompiler** from GitHub ).
-> 4. **An online tool or any other software to design your own UI components or edit existing ones** ( In my case, I'm using **Figma** ).
-> 
-> ---
+The tools required for UI development in Skyrim are as follows:
 
-````markdown
-* 0 : You'll find download links and resources at the end of this file.
-````
+- Adobe Flash Professional CS4/CS6 
+	- Cs6 is the recommended one and the one this guide is written for
+- Unreal Development Kt 2015.
+	- It contains the necessary GFX extensions, CLIK files etc.
+- A Flash decompiler, such as [JPEXs Free Flash Decompiler](https://github.com/jindrapetrik/jpexs-decompiler/)
+	- Used for decompiling the vanilla SWF files (more on those later)
+- A tool of your choice to design UI elements.
+	- A free online one is [Figma](https://www.figma.com/) but anything will work.
+- Downloads to all of them can be found [here](#download-links).
 
-#### Adobe Flash Professional CS6 + GFX setup :
+## Setting up the enviroment
 
-- Install **Adobe Flash Professional CS6**.
-  - You will find a crack inside of the archive as well with an **Instructions.txt**.
-  - Download links for the tools can be found at the end of this documentation.
-- Install **Unreal Development Kit 2015**.
-  - There's no setup file here, content provided already unpacked, as-is, just extract the content in the location of your choice.
-- Run **Adobe Flash Professional CS6**.
-- In **Adobe Flash Professional CS6**, go to the following path :
-  - **Help > Manage extensions**. Should prompt you a window like this one : [screenshot.](/documentation/screenshots/extension_manager.jpg).
-- Click **Install**, then browse to your **Unreal Development Kit 2015** install location.
-  - Find **Scaleform Extensions.mxp** located in **UDK 2015-01/Binaries/GFx/CLIK Tools**.
-  - Click on the file to install **Scaleform Extensions**.
-  - Restart **Adobe Flash Professional CS6**.
-- In **Adobe Flash Professional CS6**, go to the following path :
-  - **Edit > Preferences > ActionScript** and click on **ActionScript 2.0 parameters** button here : [screenshot.](/documentation/screenshots/actionscript_settings.jpg).
-  - **Edit > Preferences > ActionScript** and click on **ActionScript 3.0 parameters** as well if you want to give it a try.
-  - A window like this one should open : [screenshot.](/documentation/screenshots/actionscript_classes.jpg).
-    - The window will be different for **ActionScript 3.0 parameters**, just focus on the first field to add external scripts.
-  - Click the **+** sign and add the following path :
-    - **{REPLACE THIS WITH YOUR DRIVE AND PARENT FOLDERS EVENTUALLY}/UDK 2015-01/Development/Flash/AS2/CLIK** ( For ActionScript 2.0 **ONLY** ).
-    - **{REPLACE THIS WITH YOUR DRIVE AND PARENT FOLDERS EVENTUALLY}/UDK 2015-01/Development/Flash/AS3/CLIK** ( For ActionScript 3.0 **ONLY** ).
-    - **/!\\** Replace the the text inside the braces with your **Unreal Development Kit 2015** drive location, **C:/** or whatever.
-    - **/!\\** And eventually add parent folders IF **UDK 2015-01** folder is **INSIDE ANOTHER FOLDER**, then remove the braces as well.
-  - When done, click **OK**, the window will close.
-- Have a look at the right panel in **Adobe Flash Professional CS6**.
-  - If you can't find a section called **Scaleform Launcher**, you will need to go to the following path :
-  - **Window > Other Panels** and click on **Scaleform Launcher**, now it should appear on **Adobe Flash Professional CS6** right panel.
-- Now you should be able to bind GFX Player to **Adobe Flash Professional CS6**.
-  - In **Scaleform Launcher** section on the right panel, click on the **+** sign, it will open a small window with **3 inputs**.
-  - In the first input, click on the **+** sign and go to your **Unreal Development Kit 2015** installation, then go to the following path :
+#### Installing and configuring the required tools
+
+1. Install **Adobe Flash Professional CS6**.
+	- You will find a crack inside of the archive as well with an **Instructions.txt**.
+	- Download links for the tools can be found at the end of this documentation.
+2. Install **Unreal Development Kit 2015**.
+	- There's no setup file here, content provided already unpacked, as-is, just extract the content in the location of your choice.
+	- For example `C:/Tools/Unreal Development Kit 2015/`
+
+3. Configure **Adobe Flash Professional CS6**.
+	- Run **Adobe Flash Professional CS6**.
+	- In **Adobe Flash Professional CS6**, go to the following path: **Help > Manage extensions**. 
+		- Should prompt you a window like this one:
+		![Extension Menu](/docs/resources/media/extension_menu.png)
+
+	- Click **Install**, then browse to your **Unreal Development Kit 2015** install location.
+		- If you have been following this tutorial, that would be:
+		 `C:/Tools/Unreal Development Kit 2015`
+  	- Find **Scaleform Extensions.mxp** located in **UDK 2015-01/Binaries/GFx/CLIK Tools**.
+  	- Click on the file to install **Scaleform Extensions**.
+		- Cs6 will inform you that it needs to restart for changes to apply, do that.
+
+	- In **Adobe Flash Professional CS6** go to the following settings -> **Edit > Preferences > ActionScript** and click on **ActionScript 2.0 parameters** button here:
+	![Actionscript Settings](/docs/resources/media/actionscript_settings.png)
+	- A new window should open, you'd want to input the paths for the UDK Flash files for Action Script 2 by hitting the plus sign like so:
+	![Actionscript Classes](/docs/resources/media/actionscript_classes.png)
+		1. Click the plus sign to add a new class
+		2. Browse the following path, assuming you have followed the tutorial:
+		`C:/Tools\Unreal Development Kit 2015/UDK 2015-01/Development/Flash/AS2/CLIK`
+			- Depending on how you extracted the file, the `UDK 2015-01` folder might be inside another folder, adjust accordingly.
+		3. Press `Ok`, the window should automatically close.
+	- Go to the following path **Window > Other Panels** and click on **Scaleform Launcher**
+		- A new window should open, which you can then drag into Adobe CS6's right panel for easier access, like so:
+		
+			<video width="320" height="240" controls>
+  				<source src="/docs/resources/media/Scaleform-Launcher.mp4" type="video/mp4">
+			</video>
+	
+  	- In **Scaleform Launcher** section on the right panel, click on the **+** sign, it will open a small window with **3 inputs**.
+  	- In the first input, click on the **+** sign and go to your **Unreal Development Kit 2015** installation, then go to the following path :
     - **UDK 2015-01/Binaries/GFx** and select **GFxMediaPlayerD3d9.exe**, it will ask you to choose a name for the player, I suggest typing **GFxMediaPlayer**.
-  - In the second input, enter a profile name for your player profile, you can type whatever you want.
-  - Leave the third input as it is, then click **OK**, you should be able to simulate in-game behaviors now by clicking on **Test with : GFxMediaPlayer** after selecting your profile in the dropdown below ( may have some limitations though, not sure, you'll have to test it by yourself until I provide more informations about that ).
+  	- In the second input, enter a profile name for your player profile, you can type whatever you want.
+	- Leave the third input untouched.
+	- It should look something like this:
+	![Scaleform Launcher profile](/docs/resources/media/scaleform-launcher-profile.png)
+  	- If everything is as it should, click `Ok`.
+	- You can now test your UI behaviors by starting the Scaleform Launcher from the right panel and select `Test with: GFxMediaPlayer`:
+	![Scaleform Launcher Test](/docs/resources/media/scaleform_launcher_test.png)
+		- This may have some limitations, you'll have to test around yourself until I can provide more information.
 
-#### Project understanding :
+## Understanding interfaces and SWFs
 
 > ---
 > Each interface ( such as : **loadwaitspinner.swf**, **startmenu.swf**, ... ) is built from an **.fla** file that contains various **Assets** and **Scripts**.
@@ -67,7 +84,7 @@
 >
 > ---
 
-#### Scene container details :
+#### Scene container details
 
 > ---
 > For example, let's say we're working on **loadwaitspinner.swf**, which is the loader that appears in various places in Skyrim. First, I will create a file named **loadwaitspinner.fla**.
@@ -126,177 +143,10 @@ So, to sum up things, just remember the followings :
 - You cannot interact with UI components without adding **Scripts** to them.
 
 ````markdown
-* 3 : You'll find a precious tutorial on how to use **Adobe Flash Professional CS6** at the end. #NOT_AVAILABLE_YET
+* 3 : You'll find a precious tutorial on how to use **Adobe Flash Professional CS6** [here](/docs/resources/Scripting%20examples.md) **NOT FINISHED YET**
 ````
 
-### ActionScript Understanding
----
 
-#### Why do you need ActionScript to make things happen :
-
-> ---
-> **ActionScript** is a programming language based on **ECMAScript** ( similar to **JavaScript** if you're a fullstack or front web developer, this may ring a bell in your head ).
->
-> This language is used to bring UI elements ( built using tool's features or **.png**, **.bmp**, and similar files ) to life.
->
-> It allows you to manipulate your UI components and allow users to interact with your UI making it do magical things whenever a user presses a button or scrolls on a list.
->
-> Without any script, your UIs will work somehow, by that I mean that your transitions and animations will work, but they'll loop for ever or remain static without having the possibility to manipulate the transitions or animations according to user inputs.
->
-> ---
-
-#### How to bind a script to a .png file :
-
-> ---
-> First of all, don't bind **Scripts** to **.png** files directly, that's not clean and not sure if would work as intended.
->
-> Most of the time, you'll turn your **.png Assets** to **Symbols/Shapes** ( I would recommend turning all of your assets to **Shapes**, I faced some issues myself trying to leave everything to **.png** only ) and then to **Movie Clips** ( if they're animated ).
->
-> That way you make sure users will benefit from the animations resulting of their interactions with your UI components.
->
-> When you create a new UI component in **Adobe Flash Professional CS6**, you can bind an **ActionScript Class** to it through the component's properties context menu.
->
-> ---
-
-
-##### Examples :
-For example, if I want to create a **Press Start** interface in **startmenu.swf** :
-1. Create a new **Movie Clip** named **Press Start**.
-2. Create a **PressStart.as** file ( **.as** is the extension for **ActionScript** files ).
-3. Create a **class** named **PressStart** inside of **PressStart.as** file.
-4. Right click on the **Movie Clip** named **Press Start**.
-5. Go to its properties and write the name of the **PressStart** file inside of the **class** field.
-6. Fill the field right above **class** as it stands for the **ActionScript linking**.
-    - Allows to bind your **ActionScript class** to the **Movie Clip**.
-    - For this example, I'll name it **PressStartObject**.
-    - This is required to let **Flash** register everything as intended ( **Object.registerClass("PressStartObject", PressStart);** ).
-
-````javascript
-// The "extends MovieClip" is a way to tell to our UI that this class is bound to a MovieClip.
-// That way you'll be able to access MovieClip's built-in properties and functions.
-// A few example of accessible functions : "gotoAndPlay()", "stop()", "attachMovie()" and so on.
-
-class PressStart extends MovieClip {
-
-    // Code goes here.
-
-};
-````
-
-> ---
-> Note that there are many other approaches, this is just an example, an other approach would be something like the following ( **see below** ).
->
-> ---
-
-````javascript
-// Let's pretend we've created a "StartMenu" MovieClip that holds multiple child components, such as "PressStart" and "MainMenu".
-// You'd create your "StartMenu" class, and then access your "PressStart" and "MainMenu" MovieClips directly from the parent.
-// Note : In this case our parent component is "StartMenu".
-
-class StartMenu extends MovieClip {
-    
-    // First of all, we declare our child components like so.
-    // /!\ Note : IMPORTANT ! To access your child components in ActionScript, you have to make sure you added them as well in Adobe Flash Professional CS6 inside of "StartMenu" MovieClip !
-    public var PressStartMovieClip: MovieClip;
-    public var MainMenuMovieClip: MovieClip;
-
-    // Then we can access them using "this.PressStartMovieClip" and "this.MainMenuMovieClip" without the quotes of course.
-    // Note : The variables ( names ) were set through Adobe Flash Professional CS6's interface.
-    // You can put any name you want, just make sure to do it through Adobe Flash Professional CS6 and use the same names in your code.
-
-    // Below, you can find the class constructor, this function runs when the component is loaded.
-
-    public function StartMenu() {
-
-        // Here's and example that shows you how to trigger an animation on a child component.
-        // The value "10" here stands for the frame where the animation starts.
-        // Note : Assuming you created an animation on Adobe Flash Professional CS6 starting at frame 10 on the targeted child component.
-
-        this.PressStartMovieClip.gotoAndPlay(10);
-
-        // Note that the animation will run until the end or loop for ever, starting from frame 10 depending on your code.
-        // You can stop the animation at a specific frame through "onEnterFrame" event ( refer to the code below ).
-
-        this.PressStartMovieClip.onEnterFrame = function(): Void {
-
-            // The "currentFrame" variable stores the current frame of the component that is being watched / observed by the "onEnterFrame" event.
-
-            var currentFrame: Number = this._currentframe;
-
-            // ---------------------------------------------------------------------------------------------------------------------------------------
-            // The following piece of code is a piece from my coding approach that is not available yet.
-            // Don't follow this code blindly as it is incomplete and stands as an example of what you could achieve, that's all.
-            // ---------------------------------------------------------------------------------------------------------------------------------------
-
-            // The "loop" variable contains a boolean ( 0 or 1 / false or true ) that tells me whether the animation is supposed to loop or not.
-            // Note : I created this variable, this is not a built-in feature in this case.
-
-            if(!loop && currentFrame == 30) {
-
-                this.stop(); // Stops the animation.
-
-                // The "onAnimationEnd" variable contains a boolean ( 0 or 1 / false or true ) that tells me whether a component has an animation end action that needs to be triggered or not.
-                // I decided myself to assign endings to custom animations stored as "objects" with other data to ease the animations manipulation.
-
-                if(onAnimationEnd) {
-
-                    // The "selectedAnimation" variable is an object with various data representing an animation in Adobe Flash Professional CS6.
-                    // Example of selectedAnimation : { label: "Loading ( Start )", frames: [ 1, 30 ], onAnimationEnd: [ "PressStart", "displayPressStartMenu" ] }.
-
-                    var onAnimationEndData: Object = selectedAnimation.onAnimationEnd; // Stores the "selectedAnimation.onAnimationEnd" data.
-
-                    // The "scope" variable refers to the first item of "onAnimationEndData" array : "PressStart" in this case ( which is the name of the component where I want to trigger a function ).
-
-                    var scope: Object = Extension.getComponent(onAnimationEndData[0]);
-
-                    // The "methodName" variable refers to the second item of "onAnimationEndData" array : "displayPressStartMenu" in this case.
-                    // This is the name of the function inside "PressStart" component that I want to trigger for example.
-
-                    var methodName: String = onAnimationEndData[1];
-                    
-                    // The "freeze" variable refers to another component that has an animation running at the same time as my "Loading ( Start )" animation.
-                    // This variable helps me freeze the other animation when this one has ended.
-                    // Note : "freeze" is passed as a third value in "selectedAnimation.onAnimationEnd" inside of my "selectedAnimation" variable.
-                    
-                    var freeze: String = onAnimationEndData[2];
-
-                    if(!Validator.isUndefined(scope[methodName]) && Validator.isUndefined(freeze)) {
-
-                        // The "scope" : -> Component's class.
-                        // The "methodName" : -> The name of the function to trigger inside of the "scope".
-                        scope[methodName](); // According to this example, this executes "displayPressStartMenu" function inside of "PressStart" component's class.
-
-                    } else if(Validator.isUndefined(scope[methodName]) && !Validator.isUndefined(freeze)) {
-
-                        // The "Animation" here refers to a utility-custom class created to handle animations separately.
-                        // The "stopAnimation" here refers to a method ( function ) that exists in the "Animation" class.
-
-                        Animation.stopAnimation(freeze); // Stops any animation currently playing in another component.
-
-                    } else if(!Validator.isUndefined(scope[methodName]) && !Validator.isUndefined(freeze)) {
-
-                        scope[methodName]();
-                        Animation.stopAnimation(freeze);
-
-                    };
-                };
-            };
-
-            // This is a quick addon if I want to delay an animation for some reason.
-
-            if(delay > 0) { clearTimeout(delayedAnimation); };
-
-            // Note : Every single variable and function presented in this piece of code is from me besides the following :
-            // -> this._currentframe; This is a built-in property.
-            // -> this.stop(); This is a built-in function.
-            // -> clearTimeout(); This is a built-in function.
-
-            // ---------------------------------------------------------------------------------------------------------------------------------------
-        };
-
-    };
-
-};
 ````
 
 #### How to make sure the interface works :
@@ -410,7 +260,7 @@ class StartMenu extends MovieClip {
 ### Download Links
 ---
 
-Tools :
+Tools:
 - [Adobe Flash Professional CS6](https://www.mediafire.com/file/fiylko26035lrxb/Adobe_Flash_Professional_CS6_%2528_Version_12.0.0.481_%2529.rar/file) <s>( Have a look at my [Yggdrasil UI](https://www.nexusmods.com/skyrimspecialedition/mods/108880?tab=files) mod page for the tool )</s>
 - [Unreal Development Kit 2015](https://www.mediafire.com/file/2j7gvobo8sxnlg1/Unreal_Development_Kit_2015.rar/file)
 - [JPEXs Free Flash Decompiler ( Windows )](https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version20.1.0/ffdec_20.1.0_setup.exe)
