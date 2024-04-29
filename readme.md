@@ -37,8 +37,7 @@ The tools required for UI development in Skyrim are as follows :
 		- Should prompt you a window like this one :
 		![Extension Menu](/docs/resources/media/extension_menu.png)
 	- Click **Install**, then browse to your **Unreal Development Kit 2015** install location.
-		- If you have been following this tutorial, that would be:
-		 `C:/Tools/Unreal Development Kit 2015`
+		- If you have been following this tutorial, that would be : `C:/Tools/Unreal Development Kit 2015`.
   	- Find **Scaleform Extensions.mxp** located in `UDK 2015-01/Binaries/GFx/CLIK Tools`.
   	- Click on the file to install **Scaleform Extensions**.
 		- CS6 will inform you that it needs to restart for changes to apply, do that.
