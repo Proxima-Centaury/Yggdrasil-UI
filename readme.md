@@ -43,9 +43,13 @@ The tools required for UI development in Skyrim are as follows :
   	- Click on the file to install **Scaleform Extensions**.
 		- CS6 will inform you that it needs to restart for changes to apply, do that.
 	- In **Adobe Flash Professional CS6** go to the following settings : `Edit > Preferences > ActionScript` and click on **ActionScript 2.0 parameters** button here :
+
    		![Actionscript Settings](/docs/resources/media/actionscript_settings.png)
+   
 	- A new window should open, you'd want to input the paths for the UDK Flash files for **ActionScript 2.0** by hitting the plus sign like so :
+
 		![Actionscript Classes](/docs/resources/media/actionscript_classes.png)
+
    		1. Click the plus sign to add a new **class**.
 		2. Browse the following path, assuming you have followed the tutorial :
 		`C:/Tools\Unreal Development Kit 2015/UDK 2015-01/Development/Flash/AS2/CLIK`
@@ -62,10 +66,14 @@ The tools required for UI development in Skyrim are as follows :
   	- In the second input, enter a profile name for your player profile, you can type whatever you want.
 	- Leave the third input untouched.
 	- It should look something like this:
+
 		![Scaleform Launcher profile](/docs/resources/media/scaleform_launcher_profile.png)
+
    	- If everything is as it should, click `Ok`.
 	- You can now test your UI behaviors by starting the **Scaleform Launcher** from the right panel and select `Test with : GFxMediaPlayer`:
+ 
  		![Scaleform Launcher Test](/docs/resources/media/scaleform_launcher_test.png)
+   
  		- This may have some limitations, you'll have to test around yourself until I can provide more information.
 
 ## Understanding interfaces and SWFs
