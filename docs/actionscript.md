@@ -1,7 +1,6 @@
-### ActionScript Understanding
----
+## ActionScript Understanding
 
-#### Why do you need ActionScript to make things happen :
+### Why do you need ActionScript to make things happen :
 
 > ---
 > **ActionScript** is a programming language based on **ECMAScript** ( similar to **JavaScript** if you're a fullstack or front web developer, this may ring a bell in your head ).
@@ -14,7 +13,7 @@
 >
 > ---
 
-#### How to bind a script to a .png file :
+### How to bind a script to a .png file :
 
 > ---
 > First of all, don't bind **Scripts** to **.png** files directly, that's not clean and not sure if would work as intended.
@@ -28,7 +27,7 @@
 > ---
 
 
-##### Examples :
+#### Examples :
 For example, if I want to create a **Press Start** interface in **startmenu.swf** :
 1. Create a new **Movie Clip** named **Press Start**.
 2. Create a **PressStart.as** file ( **.as** is the extension for **ActionScript** files ).

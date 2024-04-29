@@ -1,81 +1,83 @@
 # UI Development Understanding
 ---
 
-## Required tools:
+## Required tools
 
-The tools required for UI development in Skyrim are as follows:
+The tools required for UI development in Skyrim are as follows :
 
-- Adobe Flash Professional CS4/CS6 
-	- Cs6 is the recommended one and the one this guide is written for
-- Unreal Development Kt 2015.
+- Adobe Flash Professional CS4/CS6.
+	- CS6 is the recommended one and the one this guide is written for.
+
+- Unreal Development Kit 2015.
 	- It contains the necessary GFX extensions, CLIK files etc.
-- A Flash decompiler, such as [JPEXs Free Flash Decompiler](https://github.com/jindrapetrik/jpexs-decompiler/)
-	- Used for decompiling the vanilla SWF files (more on those later)
+
+- A Flash decompiler, such as [JPEXs Free Flash Decompiler](https://github.com/jindrapetrik/jpexs-decompiler/).
+	- Used for decompiling the vanilla SWF files ( more on those later ).
+
 - A tool of your choice to design UI elements.
 	- A free online one is [Figma](https://www.figma.com/) but anything will work.
+
 - Downloads to all of them can be found [here](#download-links).
 
 ## Setting up the enviroment
 
-#### Installing and configuring the required tools
+### Installing and configuring the required tools :
 
 1. Install **Adobe Flash Professional CS6**.
 	- You will find a crack inside of the archive as well with an **Instructions.txt**.
 	- Download links for the tools can be found at the end of this documentation.
+
 2. Install **Unreal Development Kit 2015**.
 	- There's no setup file here, content provided already unpacked, as-is, just extract the content in the location of your choice.
-	- For example `C:/Tools/Unreal Development Kit 2015/`
+	- For example `C:/Tools/Unreal Development Kit 2015`.
 
 3. Configure **Adobe Flash Professional CS6**.
 	- Run **Adobe Flash Professional CS6**.
-	- In **Adobe Flash Professional CS6**, go to the following path: **Help > Manage extensions**. 
-		- Should prompt you a window like this one:
+	- In **Adobe Flash Professional CS6**, go to the following path : `Help > Manage extensions`.
+		- Should prompt you a window like this one :
 		![Extension Menu](/docs/resources/media/extension_menu.png)
-
 	- Click **Install**, then browse to your **Unreal Development Kit 2015** install location.
-		- If you have been following this tutorial, that would be:
-		 `C:/Tools/Unreal Development Kit 2015`
-  	- Find **Scaleform Extensions.mxp** located in **UDK 2015-01/Binaries/GFx/CLIK Tools**.
+		- If you have been following this tutorial, that would be : `C:/Tools/Unreal Development Kit 2015`.
+  	- Find **Scaleform Extensions.mxp** located in `UDK 2015-01/Binaries/GFx/CLIK Tools`.
   	- Click on the file to install **Scaleform Extensions**.
-		- Cs6 will inform you that it needs to restart for changes to apply, do that.
-
-	- In **Adobe Flash Professional CS6** go to the following settings -> **Edit > Preferences > ActionScript** and click on **ActionScript 2.0 parameters** button here:
+		- CS6 will inform you that it needs to restart for changes to apply, do that.
+	- In **Adobe Flash Professional CS6** go to the following settings : `Edit > Preferences > ActionScript` and click on **ActionScript 2.0 parameters** button here :
 
    		![Actionscript Settings](/docs/resources/media/actionscript_settings.png)
-   	
-	- A new window should open, you'd want to input the paths for the UDK Flash files for Action Script 2 by hitting the plus sign like so:
+   
+	- A new window should open, you'd want to input the paths for the UDK Flash files for **ActionScript 2.0** by hitting the plus sign like so :
 
 		![Actionscript Classes](/docs/resources/media/actionscript_classes.png)
 
-   		1. Click the plus sign to add a new class
-		2. Browse the following path, assuming you have followed the tutorial:
-		`C:/Tools\Unreal Development Kit 2015/UDK 2015-01/Development/Flash/AS2/CLIK`
+   		1. Click the plus sign to add a new **class**.
+		2. Browse the following path, assuming you have followed the tutorial :
+		`C:/Tools\Unreal Development Kit 2015/UDK 2015-01/Development/Flash/AS2/CLIK`.
 			- Depending on how you extracted the file, the `UDK 2015-01` folder might be inside another folder, adjust accordingly.
 		3. Press `Ok`, the window should automatically close.
-	- Go to the following path **Window > Other Panels** and click on **Scaleform Launcher**
-		- A new window should open, which you can then drag into Adobe CS6's right panel for easier access, like so:
-		
+	- Go to the following path : `Window > Other Panels` and click on **Scaleform Launcher**.
+		- A new window should open, which you can then drag into Adobe CS6's right panel for easier access, like so :
+
 		https://github.com/MissCorruption/Yggdrasil-UI/assets/125442561/c396ec2f-7627-4c05-8905-1a9db71147fe
 
-
-	
   	- In **Scaleform Launcher** section on the right panel, click on the **+** sign, it will open a small window with **3 inputs**.
-  	- In the first input, click on the **+** sign and go to your **Unreal Development Kit 2015** installation, then go to the following path :
-    - **UDK 2015-01/Binaries/GFx** and select **GFxMediaPlayerD3d9.exe**, it will ask you to choose a name for the player, I suggest typing **GFxMediaPlayer**.
+  	- In the first input, click on the **+** sign and go to your **Unreal Development Kit 2015** installation, then go to the following path : `UDK 2015-01/Binaries/GFx`.
+		- Select **GFxMediaPlayerD3d9.exe**, it will ask you to choose a name for the player, I suggest typing **GFxMediaPlayer**.
   	- In the second input, enter a profile name for your player profile, you can type whatever you want.
 	- Leave the third input untouched.
 	- It should look something like this:
 
-		![Scaleform Launcher profile](/docs/resources/media/scaleform-launcher-profile.png)
+		![Scaleform Launcher profile](/docs/resources/media/scaleform_launcher_profile.png)
 
    	- If everything is as it should, click `Ok`.
-	- You can now test your UI behaviors by starting the Scaleform Launcher from the right panel and select `Test with: GFxMediaPlayer`:
-	
+	- You can now test your UI behaviors by starting the **Scaleform Launcher** from the right panel and select `Test with : GFxMediaPlayer` :
+ 
  		![Scaleform Launcher Test](/docs/resources/media/scaleform_launcher_test.png)
-	
+   
  		- This may have some limitations, you'll have to test around yourself until I can provide more information.
 
 ## Understanding interfaces and SWFs
+
+### Quick introduction :
 
 > ---
 > Each interface ( such as : **loadwaitspinner.swf**, **startmenu.swf**, ... ) is built from an **.fla** file that contains various **Assets** and **Scripts**.
@@ -92,7 +94,7 @@ The tools required for UI development in Skyrim are as follows:
 >
 > ---
 
-#### Scene container details
+### Scene container details :
 
 > ---
 > For example, let's say we're working on **loadwaitspinner.swf**, which is the loader that appears in various places in Skyrim. First, I will create a file named **loadwaitspinner.fla**.
@@ -109,7 +111,7 @@ The tools required for UI development in Skyrim are as follows:
 >
 > ---
 
-#### Project building :
+### Project building :
 
 > ---
 > To be able to see your UIs in game, you will need to convert your **.fla** files to **.swf** files. To do so, go to **File > Publishing parameters** and make sure the **target** is set to **Flash Player 11.2** and the **script** to **ActionScript 2.0**. Once you made sure the parameters were set properly, you can choose the **.swf file output location**, and then you can press **Ok**.
@@ -128,10 +130,10 @@ The tools required for UI development in Skyrim are as follows:
 
 ````markdown
 * 1 : This is just the basics, and this is enough to show your UIs in game.
-* 2 : Note that you won't be able to interact with them until we get to **ActionScript** scripting.
+* 2 : Note that you won't be able to interact with them until we get to **ActionScript** coding.
 ````
 
-#### Debriefing :
+### Debriefing :
 
 So, to sum up things, just remember the followings :
 
@@ -149,15 +151,9 @@ So, to sum up things, just remember the followings :
   - **Scripts**.
 - Each **Script** in a **.swf** file is written using **ActionScript 2.0** or **ActionScript 3.0**.
 - You cannot interact with UI components without adding **Scripts** to them.
+- You'll find a quick tutorial about **ActionScript 2.0** [here](/docs/actionscript.md).
 
-````markdown
-* 3 : You'll find a precious tutorial on how to use **Adobe Flash Professional CS6** [here](/docs/resources/Scripting%20examples.md) **NOT FINISHED YET**
-````
-
-
-````
-
-#### How to make sure the interface works :
+### How to make sure the interface works :
 
 > ---
 > You can test your interfaces after **publishing** with **CTRL+Enter** if **YOU ARE NOT USING GFX PLAYER**, this will open a window with your interfaces running, you'll be able to interact with your interface with some limitations.
@@ -177,27 +173,22 @@ So, to sum up things, just remember the followings :
 >
 > ---
 
-````markdown
-* 4 : You'll find another precious tutorial on **ActionScript** scripting at the end. #NOT_AVAILABLE_YET
-````
+## Project Dependencies & Explanations
 
-### Project Dependencies & Explanations
----
-
-#### Dependencies :
+### Dependencies :
 
 > ---
 > First of all, I'm gonna let you know that Skyrim UI building requires some specific **Classes** provided by **Autodesk's Scaleform**.
 >
 > You can find them by decompiling the vanilla UIs ( using **JPEXs Free Flash Decompiler** ) that can be extracted from the base game's **Interface.bsa**.
 >
-> But I'll provide reworked ( not so much ) versions of them in this repository, up to you.
+> You can also obtain these files by downloading **Unreal Development Kit 2015** ( link at the end of the documentation ).
 >
-> BSA extractor can be found in nexus mods. You will also need to implement some specific **ActionScript Classes**, everything needed will be listed below.
+> BSA extractor to get vanilla **.swf** files can be found in nexus mods. You will also need to implement some specific **ActionScript classes**, everything needed will be listed below.
 >
 > ---
 
-#### Dependencies list : SKIP THIS SECTION AS IT IS RELATED TO MY CUSTOM APPROACH ( which is not available yet )
+### Dependencies list : SKIP THIS SECTION AS IT IS RELATED TO MY CUSTOM APPROACH ( which is not available yet )
 
 > ---
 > Note : *I renamed some of them, and renamed some of their properties and methods as well*.
@@ -227,13 +218,13 @@ So, to sum up things, just remember the followings :
 > - **GFX.Utils.Constraints**
 > - **GFX.Utils.Locale**
 >
-> ActionScript : ( With some scaleform integrations )
+> ActionScript : *With some scaleform integrations*.
 > - **Mouse**
 > - **Selection**
 > - **Stage**
 >
 > Bethesda Classes :
-> - **Shared.BSScrollingList** ( I will probably change this **Class** approach or merge it with other scrolling list **Classes** )
+> - **Shared.BSScrollingList**
 > - **Shared.ButtonChange**
 > - **Shared.ButtonTextArtHolder**
 > - **Shared.CenteredList**
@@ -241,27 +232,31 @@ So, to sum up things, just remember the followings :
 > - **Shared.GlobalFunction**
 > - **Shared.ListFilterer**
 > - **Shared.PlatformChange**
-> - **Shared.VerticalCenteredList** ( I will probably merge this **Class** with **CenteredList** and **CenteredScrollingList** at some point )
+> - **Shared.VerticalCenteredList**
 >
 > My Classes :
 > - **Utilities.Animation** ( Optional )
+> - **Utilities.AnimationLibrary** ( Optional )
 > - **Utilities.Extension** ( Optional )
+> - **Utilities.State** ( Optional )
+> - **Utilities.Trace** ( Optional )
+> - **Utilities.Validator** ( Optional )
 >
 > ---
 
-#### Project dependency tree :
+### Project dependency tree :
 
 > ---
 > Bethesda has its own project structure, you can find the dependency tree of the vanilla game by visiting SkyUI Team's GitHub repositories.
 >
-> Here, I'll provide a different approach ( but still not so different than the vanilla tree ), just that it made more sense to me in the way I'm about to present it to you.
+> Here, I'll provide a different approach ( but still not so different than the vanilla tree ), just that it made more sense to me in the way I'll present it to you.
 >
 > You'll find out more by checking this repository's files, everything will be explained ( as much as I can explain it of course ).
 >
 > ---
 
 ````markdown
-* 5 : You'll find other **.md** files in this repository, providing more explanations for each class. #NOT_AVAILABLE_YET
+* 5 : You'll find other **.md** files in this repository, providing more explanations about various aspects of Skyrim UI development.
 * 6 : That's all for the introduction, see below for some download links.
 ````
 
