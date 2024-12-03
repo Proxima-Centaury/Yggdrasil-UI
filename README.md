@@ -4,33 +4,29 @@
 
 The tools required for UI development in Skyrim are as follows :
 
-> <br/>
-> 
-> - `Adobe Flash Professional CS4/CS6`.
->	- `Adobe Flash Professional CS6` is the recommended one and the one this guide is written for.
->
-> - `Unreal Development Kit 2015`.
->	- It contains the necessary `GFX Extensions`, `CLIK` files and everything else needed to test your UIs using `Adobe Flash Professional CS6`.
->
-> - `JPEXS Free Flash Decompiler`.
->	- Used for decompiling the vanilla `.swf` files ( *more on those later* ).
->
-> - A tool of your choice to design UI elements, some `FREE` examples below.
->	- `FREE` [Figma](https://www.figma.com)
->	- `FREE` [Gimp](https://www.gimp.org/downloads)
->	- `FREE` [Paint.NET](https://www.getpaint.net)
->
-> - `BSA Archive Extractor`.
-> 	- Used to extract vanilla game's UI components, you can do it for existing UI mods as well if you're allowed to do so.
->
-> - Download links can be found [here](#download-links).
->
-> </br>
+- `Adobe Flash Professional CS4/CS6`.
+    - `Adobe Flash Professional CS6` is the recommended one and the one this guide is written for.
+
+- `Unreal Development Kit 2015`.
+    - It contains the necessary `GFX Extensions`, `CLIK` files and everything else needed to test your UIs using `Adobe Flash Professional CS6`.
+
+- `JPEXS Free Flash Decompiler`.
+    - Used for decompiling the vanilla `.swf` files ( *more on those later* ).
+
+- A tool of your choice to design UI elements, some `FREE` examples below :
+    - `FREE` [Figma](https://www.figma.com)
+    - `FREE` [Gimp](https://www.gimp.org/downloads)
+    - `FREE` [Paint.NET](https://www.getpaint.net)
+
+- `BSA Archive Extractor`.
+    - Used to extract vanilla game's UI components, you can do it for existing UI mods as well if you're allowed to do so.
+
+Download links can be found [here](#download-links).
 
 ## Setting up the enviroment
 
 1. Install `Adobe Flash Professional CS6`.
-	- You will find a crack inside of the archive as well with an `Instructions.txt`.
+	- You will find a crack inside of the archive as well with an `Instructions.txt` file.
 	- Download links for the tools can be found at the end of this documentation.
 
 2. Install `Unreal Development Kit 2015`.
@@ -52,19 +48,18 @@ The tools required for UI development in Skyrim are as follows :
 
    		![Actionscript Settings](/docs/resources/media/actionscript_settings.png)
    
-	- A new window should open, you'd want to input the paths for the UDK Flash files for `ActionScript 2.0` by hitting the plus sign like so :
+	- A new window should open, you'd want to input the paths for the UDK Flash files for `ActionScript 2.0` by hitting the `+` sign like so :
 
 		![Actionscript Classes](/docs/resources/media/actionscript_classes.png)
 
-   		1. Click the plus sign to add a new source folder.
-		1. Browse the following path, assuming you have followed the tutorial :
-		`C:/Tools/Unreal Development Kit 2015/UDK 2015-01/Development/Flash/AS2/CLIK`.
+   		1. Click the `+` sign to add a new source folder.
+		2. Browse the following path, assuming you have followed the tutorial : `C:/Tools/Unreal Development Kit 2015/UDK 2015-01/Development/Flash/AS2/CLIK`.
 			- Depending on how you extracted the file, the `UDK 2015-01` folder might be inside another folder, adjust accordingly.
-    	2. Move the location you just added to the top ( before the project's root folder which is marked with a single dot ) to match the following order :
-          	1. C:/Tools/Unreal Development Kit 2015/UDK 2015-01/Development/Flash/AS2/CLIK
-          	2. .
-          	3. ${LocalData}/Classes
-		3. Press `Ok`, the window should automatically close.
+    	1. Move the location you just added to the top ( before the project's root folder which is marked with a single dot ) to match the following order :
+          	1. `C:/Tools/Unreal Development Kit 2015/UDK 2015-01/Development/Flash/AS2/CLIK`
+          	2. `.`
+          	3. `${LocalData}/Classes`
+		2. Press `Ok`, the window should automatically close.
 	- Go to the following path : `Window > Other Panels` and click on `Scaleform Launcher`.
 		- A new window should open, which you can then drag into `Adobe Flash Professional CS6`'s right panel for easier access, like so :
 
