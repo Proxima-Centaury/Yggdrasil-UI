@@ -99,4 +99,15 @@ Download links can be found [here](#download-links).
 <u>Sources :</u>
 
 - [ActionScript 2.0 Documentation](https://open-flash.github.io/mirrors/as2-language-reference/index.html)
+- [ActionScript 3.0 Documentation](https://airsdk.dev/reference/actionscript/3.0)
 - [Unofficial Skyrim UI SDK](https://github.com/Mardoxx/skyrimui) ( By SkyUI team )
+
+## Credits
+
+- [CommonLibSSE-NG Team](https://github.com/CharmedBaryon/CommonLibSSE-NG) for their great work on their SKSE replacer
+- [Eugene](https://www.patreon.com/c/EdgeUI/posts) for his great Edge UI mod that made me want to create my own mod as well
+- [Mrowrpurr](https://www.youtube.com/c/skyrimscripting) for C++ scripting tutorials
+- [SKSE Team](https://github.com/ianpatt/skse64) for their great script extender
+- [SkyUI Team](https://github.com/Mardoxx/skyrimui) for their great work on UI modding
+
+Thanks to them, I'm now able to re-do every single UI component existing in game from the GROUND and creating new custom UI components as well ( for the SKSE part, ActionScript wasn't that complicated to understand me being a web developer ).
