@@ -1,0 +1,9 @@
+[submodule "src/SKSE/Plugins/Yggdrasil UI/dependencies/CommonLibSSE-NG"]
+	path = src/SKSE/Plugins/Yggdrasil UI/dependencies/CommonLibSSE-NG
+	url = https://github.com/CharmedBaryon/CommonLibSSE-NG
+[submodule "src/SKSE/Plugins/Yggdrasil UI/dependencies/SimpleINI"]
+	path = src/SKSE/Plugins/Yggdrasil UI/dependencies/SimpleINI
+	url = https://github.com/brofield/simpleini.git
+[submodule "simpleini"]
+	path = simpleini
+	url = https://github.com/brofield/simpleini.git
