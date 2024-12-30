@@ -60,7 +60,7 @@ So, to sum up things, just remember the followings :
     - As you may have understood, an `SKSE Plugin` or a `Papyrus Script` is like a bridge that joins your `.swf` UIs with the game `Engine`.
 
 If you decide to skip the creation of an `SKSE Plugin` or a `Papyrus Script`, you will have to stick to vanilla `GameDelegate callbacks`.<br/>
-That means that you won't be able to create your own callbacks outside of your `.swf`'s scope.<br/>
+That means that you won't be able to create additional custom callbacks.<br/>
 You will need to use the already existing `Papyrus callbacks` from the base game to handle your UI actions.
 
 ## The flow works like this
@@ -71,7 +71,118 @@ You will need to use the already existing `Papyrus callbacks` from the base game
 <u>Step 2 :</u>
 - If some components in your `.swf` file require in-game data :
     - Your `.swf` file, upon loading or after a specific action, will trigger `ActionScript` functions that will ask an `SKSE Plugin` or a `Papyrus Script` for the data.
-    - The `SKSE Plugin` or the `Papyrus Script` will execute a bunch of actions, then return the data as `function parameters` to a function in your `ActionScript`.
-    - Then you will receive the data through `function parameters` ( also called `arguments` or `args` ) to manipulate to your liking ( *example below* ).
+    - The `SKSE Plugin` or the `Papyrus Script` will execute a bunch of actions.
+    - Then you will receive the data through `class properties` or `function parameters` ( also called `arguments` or `args` ) passed to an `ActionScript function` invoked by your external scripts or vanilla scripts to manipulate to your liking ( *example below* ).
 
-/!\ CODE EXAMPLES WILL BE ADDED WHEN I MADE SURE EVERYTHING WORKS AS INTENDED /!\
+**/!\\** CODE EXAMPLES WILL BE ADDED WHEN I MADE SURE EVERYTHING WORKS AS INTENDED **/!\\**
+
+## UI configuration file
+
+**/!\\** THIS FILE ( `configuration.json` ) SHOULD BY PLACED IN `/Interface/Yggdrasil UI` **/!\\**
+
+It serves as a UI customization preference, allowing to change text colors, content positioning, content visibility, icon swaps, and more to fit your tastes.
+
+### Section `GENERAL` :
+
+```markdown
+[Key](SetUIAlignment) :
+> Defines the alignment of UI components, as well as their contents and texts
+> Value <Center> will align the content in the middle
+> Value <Left> will align the content in the left side
+> Value <Right> will align the content in the right side
+## Note :
+If a UI has one or multiple states where it shows 2 or more containers, like startmenu.swf for example where you the have <MainMenu> and ( in some cases ) when selecting a character's save in <CharacterSelection> for example, also shows you another container, then the other container will be placed at the opposite if you chose <Left> or <Right> as value. If you select <Center> the other containers will be placed in the <Left> side first then in the <Right> side if you face cases where you have 3 containers displayed at once.
+```
+
+### Section `STARTMENU` :
+
+```markdown
+[Key](EnableCustomBackground) :
+> Defines whether your custom background should be displayed in startmenu or not
+> Value <true> will enable your custom background
+> Value <false> will disable your custom background
+```
+
+```markdown
+[Key](EnableCustomBackgroundRandomizer) :
+> Defines whether startmenu background should be randomized or not
+> Value <true> will enable custom background randomization
+> Value <false> will disable custom background randomization
+## Note :
+Note that the randomizer will require you to have more than 1 background in the backgrounds folder. Custom backgrounds should be placed in : Interface/Yggdrasil UI/Backgrounds.
+```
+
+```markdown
+[Key](EnableCustomBackgroundVignette) :
+> Defines whether a vignette should be displayed or not
+> Value <true> will enable vignette above your custom background
+> Value <false> will disable vignette above your custom background
+```
+
+### Section `PRESSSTART` :
+
+```markdown
+[Key](SetButtonColor) :
+> Defines the color of the "Press any button" text
+> Value any <HEXCOLOR> without # ( ex : "FFFFFF" )
+```
+
+```markdown
+[Key](SetCursorLeft) :
+> Defines the icon of the cursor next to "Press any button" text
+> Value any <ICON> existing in <SetCursorLibrary>
+## Note :
+The icon you choose here will be searched in the library you decided to use in SetCursorLibrary key, so double check you set the correct Icon IDs here.
+```
+
+```markdown
+[Key](SetCursorRight) :
+> Defines the icon of the cursor next to "Press any button" text
+> Value any <ICON> existing in <SetCursorLibrary>
+## Note :
+The icon you choose here will be searched in the library you decided to use in SetCursorLibrary key, so double check you set the correct Icon IDs here.
+```
+
+```markdown
+[Key](SetCursorLibrary) :
+> Defines from which library the icons should be displayed
+> Value any <LIBRARY>
+## Note :
+Note that the libraries are located in : Interface/Yggdrasil UI/Icons.
+```
+
+```markdown
+[Key](SetLogo) :
+> Defines the main icon that appears during the "Press any button" state
+> Value any <ICON> existing in <SetLogoLibrary>
+## Note :
+The icon you choose here will be searched in the library you decided to use in SetLogoLibrary key, so double check you set the correct Icon IDs here.
+```
+
+```markdown
+[Key](SetLogoLibrary) :
+> Defines from which library the icons should be displayed
+> Value any <LIBRARY>
+## Note :
+Note that the libraries are located in : Interface/Yggdrasil UI/Icons.
+```
+
+```markdown
+[Key](SetSequelColor) :
+> Defines the color of the "V" text
+> Value any <HEXCOLOR> without # ( ex : "FFFFFF" )
+## Note :
+You can change the text in the translation files located in : Interace/Yggdrasil UI/Translations.
+```
+
+```markdown
+[Key](SetTitleColor) :
+> Defines the color of the "The Elder Scrolls" text
+> Value any <HEXCOLOR> without # ( ex : "FFFFFF" )
+## Note :
+You can change the text in the translation files located in : Interace/Yggdrasil UI/Translations.
+```
+
+### Section `MAINMENU` :
+
+**/!\\** SECTION UNDER DEVELOPMENT **/!\\**

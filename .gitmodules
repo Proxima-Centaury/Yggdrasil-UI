@@ -4,6 +4,3 @@
 [submodule "src/SKSE/Plugins/Yggdrasil UI/dependencies/SimpleINI"]
 	path = src/SKSE/Plugins/Yggdrasil UI/dependencies/SimpleINI
 	url = https://github.com/brofield/simpleini.git
-[submodule "simpleini"]
-	path = simpleini
-	url = https://github.com/brofield/simpleini.git
