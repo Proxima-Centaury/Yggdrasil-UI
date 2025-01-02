@@ -87,7 +87,7 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ### Key `Adjustment` :
 > 
 > #### Description :
-> ```json
+> ```typescript
 > // Allows you to tweak [ x, y ] axis positioning for supported UI elements.
 > // Mostly for containers, menus, titles and icons.
 > ```
@@ -100,10 +100,10 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ```
 > 
 > #### Usage :
-> ```json
-> // Following ex decreases UI element's y position by 20 pixels
+> ```typescript
+> // Following example decreases UI element's y position by 20 pixels
 > "Adjustment": { "x": 0, "y": -20 }
-> // Following ex increases UI element's y position by 80.5 pixels
+> // Following example increases UI element's y position by 80.5 pixels
 > "Adjustment": { "x": 0, "y": 80.5 }
 > // Basically : Current UI element's y position plus or minus y "Adjustment" value
 > ```
@@ -125,10 +125,10 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ```
 > 
 > #### Usage :
-> ```json
-> // Following ex sets UI element's position to center
+> ```typescript
+> // Following example sets UI element's position to center
 > "Align": "center"
-> // Following ex sets UI element's position to right
+> // Following example sets UI element's position to right
 > "Align": "right"
 > // May not align text in some cases ( when 2 texts are aligned for example )
 > // It's generally because it can be aligned using the container instead
@@ -151,10 +151,10 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ```
 > 
 > #### Usage :
-> ```json
-> // Following ex sets UI element's alpha to 17.5%
+> ```typescript
+> // Following example sets UI element's alpha to 17.5%
 > "Alpha": 17.5
-> // Following ex sets UI element's alpha to 50%
+> // Following example sets UI element's alpha to 50%
 > "Alpha": 50
 > ```
 
@@ -175,8 +175,8 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ```
 > 
 > #### Usage :
-> ```json
-> // Following ex sets UI element's alpha to 17.5%
+> ```typescript
+> // Following example sets UI element's alpha to 17.5%
 > "Backgrounds": [ "0001.dds", "test.dds", "sky.dds", "skyrim_scenery.dds" ]
 > // Make sure to add the extension to file name or it won't work
 > // Also, it's case-sensitive, so make sure to write each file name correctly
@@ -199,12 +199,12 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ```
 > 
 > #### Usage :
-> ```json
-> // Following ex sets UI element's color to a shade of black
+> ```typescript
+> // Following example sets UI element's color to a shade of black
 > "Color": "262626"
-> // Following ex sets UI element's color to red
+> // Following example sets UI element's color to red
 > "Color": "FF0000"
-> // Following ex sets UI element's color to white
+> // Following example sets UI element's color to white
 > "Color": "FFFFFF"
 > ```
 
@@ -225,14 +225,14 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ```
 > 
 > #### Usage :
-> ```json
-> // Following ex sets UI element's gradient to a shade of black
+> ```typescript
+> // Following example sets UI element's gradient to a shade of black
 > // Adding same color multiple times is needed if you want to tweak the spread
 > "Colors": [ "262626", "262626", "262626", "262626", "262626" ]
-> // Following ex sets UI element's gradient from red to green then blue
+> // Following example sets UI element's gradient from red to green then blue
 > // Starts with red, goes to green, then to blue
 > "Colors": [ "FF0000", "00FF00", "0000FF" ]
-> // Following ex sets UI element's gradient from white to darker shades
+> // Following example sets UI element's gradient from white to darker shades
 > // Adding same color multiple times is needed if you want to tweak the spread
 > "Colors": [ "FFFFFF", "EEEEEE", "DDDDDD", "CCCCCC" ]
 > ```
@@ -254,12 +254,12 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ```
 > 
 > #### Usage :
-> ```json
-> // Following ex sets UI element's gradient from top to bottom
+> ```typescript
+> // Following example sets UI element's gradient from top to bottom
 > "Direction": "TtoB"
-> // Following ex sets UI element's gradient from right to left
+> // Following example sets UI element's gradient from right to left
 > "Direction": "RtoL"
-> // Following ex sets UI element's gradient from bottom-left to top-right
+> // Following example sets UI element's gradient from bottom-left to top-right
 > "Direction": "BLtoTR"
 > ```
 
@@ -279,9 +279,9 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ```
 > 
 > #### Usage :
-> ```json
-> // Following ex enables related feature
+> ```typescript
+> // Following example enables related feature
 > "Enabled": true
-> // Following ex disables related feature
+> // Following example disables related feature
 > "Enabled": false
 > ```

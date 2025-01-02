@@ -90,7 +90,7 @@ Download links can be found [here](#download-links).
 - [Figma ( Windows )](https://www.figma.com/download/desktop/win) ( You can stick to the online tool though, not forced to download the app )
 - [Figma ( MacOS )](https://www.figma.com/download/desktop/mac) ( You can stick to the online tool though, not forced to download the app )
 - [Gimp](https://www.gimp.org/downloads)
-- [GreenSock](hhttps://github.com/greensock/GreenSock-AS2) ( `ActionScript 2 Library` for `Animations` and other filters )
+- [GreenSock](https://github.com/greensock/GreenSock-AS2) ( `ActionScript 2 Library` for `Animations` and other filters )
 - [JPEXS Free Flash Decompiler ( Windows )](https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version20.1.0/ffdec_20.1.0_setup.exe)
 - [JPEXS Free Flash Decompiler ( Linux )](https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version20.1.0/ffdec_20.1.0.deb)
 - [JPEXS Free Flash Decompiler ( MacOS )](https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version20.1.0/ffdec_20.1.0.pkg)
