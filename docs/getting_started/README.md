@@ -88,15 +88,15 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > 
 > #### Description :
 > ```typescript
-> // Allows you to tweak [ x, y ] axis positioning for supported UI elements.
-> // Mostly for containers, menus, titles and icons.
+> // Allows you to tweak [ x, y ] axis positioning for supported UI elements
+> // Mostly for containers, menus, titles and icons
 > ```
 > 
 > #### Value :
-> ```markdown
-> > Accepts object only.
-> <x> can be any positive or negative value.
-> <y> can be any positive or negative value.
+> ```typescript
+> // Accepts object only
+> "x" can be any "positive" or "negative" value
+> "y" can be any "positive" or "negative" value
 > ```
 > 
 > #### Usage :
@@ -113,15 +113,15 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ### Key `Align` :
 > 
 > #### Description :
-> ```markdown
-> > Allows you to tweak [ x ] axis positioning for supported UI elements.
-> > Mostly for texts.
+> ```typescript
+> // Allows you to tweak [ x ] axis positioning for supported UI elements
+> // Mostly for texts
 > ```
 > 
 > #### Value :
-> ```markdown
-> > Accepts string only.
-> Can be <center>, <left> or <right>.
+> ```typescript
+> // Accepts string only
+> "center", "left" or "right"
 > ```
 > 
 > #### Usage :
@@ -139,15 +139,15 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ### Key `Alpha` :
 > 
 > #### Description :
-> ```markdown
-> > Allows you to tweak transparency for supported UI elements.
-> > Mostly for backgrounds and menu items.
+> ```typescript
+> // Allows you to tweak transparency for supported UI elements
+> // Mostly for backgrounds and menu items
 > ```
 > 
 > #### Value :
-> ```markdown
-> > Accepts number only.
-> Can be any <positive> value between 0 and 100 included.
+> ```typescript
+> // Accepts number only
+> Any "positive" value between 0 and 100 included
 > ```
 > 
 > #### Usage :
@@ -163,15 +163,15 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ### Key `Backgrounds` :
 > 
 > #### Description :
-> ```markdown
-> > Allows you to define which backgrounds should be displayed.
-> > Concerns the Background Randomizer feature only.
+> ```typescript
+> // Allows you to define which backgrounds should be displayed
+> // Concerns the Background Randomizer feature only
 > ```
 > 
 > #### Value :
-> ```markdown
-> > Accepts array only.
-> Can be of any <size>, add as much backgrounds as you want.
+> ```typescript
+> // Accepts array only
+> Any "size", add as much backgrounds as you want
 > ```
 > 
 > #### Usage :
@@ -187,15 +187,15 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ### Key `Color` :
 > 
 > #### Description :
-> ```markdown
-> > Allows you to tweak color for supported UI elements.
-> > Mostly for backgrounds and texts.
+> ```typescript
+> // Allows you to tweak color for supported UI elements
+> // Mostly for backgrounds and texts
 > ```
 > 
 > #### Value :
-> ```markdown
-> > Accepts string only.
-> Can be any <hexadecimal> code.
+> ```typescript
+> // Accepts string only
+> Any "hexadecimal" code
 > ```
 > 
 > #### Usage :
@@ -213,15 +213,15 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ### Key `Colors` :
 > 
 > #### Description :
-> ```markdown
-> > Allows you to tweak colors for supported UI elements.
-> > Concerns gradient Background feature only.
+> ```typescript
+> // Allows you to tweak colors for supported UI elements
+> // Concerns gradient Background feature only
 > ```
 > 
 > #### Value :
-> ```markdown
-> > Accepts array only.
-> Can be of any <size>, add as much colors as you want.
+> ```typescript
+> // Accepts array only
+> Any "size", add as much colors as you want
 > ```
 > 
 > #### Usage :
@@ -242,15 +242,15 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ### Key `Direction` :
 > 
 > #### Description :
-> ```markdown
-> > Allows you to tweak gradient direction for supported UI elements.
-> > Concerns gradient Background feature only.
+> ```typescript
+> // Allows you to tweak gradient direction for supported UI elements
+> // Concerns gradient Background feature only
 > ```
 > 
 > #### Value :
-> ```markdown
-> > Accepts string only.
-> Can be <TtoB>, <BtoT>, <LtoR>, <RtoL>, <TLtoBR>, <TRtoBL>, <BRtoTL> or <BLtoTR>.
+> ```typescript
+> // Accepts string only
+> "TtoB", "BtoT", "LtoR", "RtoL", "TLtoBR", "TRtoBL", "BRtoTL" or "BLtoTR"
 > ```
 > 
 > #### Usage :
@@ -268,14 +268,14 @@ It serves as a UI customization preference, allowing to change text colors, cont
 > ### Key `Enabled` :
 > 
 > #### Description :
-> ```markdown
-> > Allows you to enable or disable some features for supported UI elements.
+> ```typescript
+> // Allows you to enable or disable some features for supported UI elements
 > ```
 > 
 > #### Value :
-> ```markdown
-> > Accepts boolean only.
-> Can be <false> or <true>.
+> ```typescript
+> // Accepts boolean only
+> false or true
 > ```
 > 
 > #### Usage :
