@@ -78,111 +78,210 @@ You will need to use the already existing `Papyrus callbacks` from the base game
 
 ## UI configuration file
 
-**/!\\** THIS FILE ( `configuration.json` ) SHOULD BY PLACED IN `/Interface/Yggdrasil UI` **/!\\**
+**/!\\** THIS FILE ( `configuration.json` ) SHOULD BE PLACED IN `/Interface/Yggdrasil UI` **/!\\**
 
 It serves as a UI customization preference, allowing to change text colors, content positioning, content visibility, icon swaps, and more to fit your tastes.
 
-### Section `GENERAL` :
+---
 
-```markdown
-[Key](SetUIAlignment) :
-> Defines the alignment of UI components, as well as their contents and texts
-> Value <Center> will align the content in the middle
-> Value <Left> will align the content in the left side
-> Value <Right> will align the content in the right side
-## Note :
-If a UI has one or multiple states where it shows 2 or more containers, like startmenu.swf for example where you the have <MainMenu> and ( in some cases ) when selecting a character's save in <CharacterSelection> for example, also shows you another container, then the other container will be placed at the opposite if you chose <Left> or <Right> as value. If you select <Center> the other containers will be placed in the <Left> side first then in the <Right> side if you face cases where you have 3 containers displayed at once.
-```
+> ### Key `Adjustment` :
+> 
+> #### Description :
+> ```json
+> // Allows you to tweak [ x, y ] axis positioning for supported UI elements.
+> // Mostly for containers, menus, titles and icons.
+> ```
+> 
+> #### Value :
+> ```markdown
+> > Accepts object only.
+> <x> can be any positive or negative value.
+> <y> can be any positive or negative value.
+> ```
+> 
+> #### Usage :
+> ```json
+> // Following ex decreases UI element's y position by 20 pixels
+> "Adjustment": { "x": 0, "y": -20 }
+> // Following ex increases UI element's y position by 80.5 pixels
+> "Adjustment": { "x": 0, "y": 80.5 }
+> // Basically : Current UI element's y position plus or minus y "Adjustment" value
+> ```
 
-### Section `STARTMENU` :
+---
 
-```markdown
-[Key](EnableCustomBackground) :
-> Defines whether your custom background should be displayed in startmenu or not
-> Value <true> will enable your custom background
-> Value <false> will disable your custom background
-```
+> ### Key `Align` :
+> 
+> #### Description :
+> ```markdown
+> > Allows you to tweak [ x ] axis positioning for supported UI elements.
+> > Mostly for texts.
+> ```
+> 
+> #### Value :
+> ```markdown
+> > Accepts string only.
+> Can be <center>, <left> or <right>.
+> ```
+> 
+> #### Usage :
+> ```json
+> // Following ex sets UI element's position to center
+> "Align": "center"
+> // Following ex sets UI element's position to right
+> "Align": "right"
+> // May not align text in some cases ( when 2 texts are aligned for example )
+> // It's generally because it can be aligned using the container instead
+> ```
 
-```markdown
-[Key](EnableCustomBackgroundRandomizer) :
-> Defines whether startmenu background should be randomized or not
-> Value <true> will enable custom background randomization
-> Value <false> will disable custom background randomization
-## Note :
-Note that the randomizer will require you to have more than 1 background in the backgrounds folder. Custom backgrounds should be placed in : Interface/Yggdrasil UI/Backgrounds.
-```
+---
 
-```markdown
-[Key](EnableCustomBackgroundVignette) :
-> Defines whether a vignette should be displayed or not
-> Value <true> will enable vignette above your custom background
-> Value <false> will disable vignette above your custom background
-```
+> ### Key `Alpha` :
+> 
+> #### Description :
+> ```markdown
+> > Allows you to tweak transparency for supported UI elements.
+> > Mostly for backgrounds and menu items.
+> ```
+> 
+> #### Value :
+> ```markdown
+> > Accepts number only.
+> Can be any <positive> value between 0 and 100 included.
+> ```
+> 
+> #### Usage :
+> ```json
+> // Following ex sets UI element's alpha to 17.5%
+> "Alpha": 17.5
+> // Following ex sets UI element's alpha to 50%
+> "Alpha": 50
+> ```
 
-### Section `PRESSSTART` :
+---
 
-```markdown
-[Key](SetButtonColor) :
-> Defines the color of the "Press any button" text
-> Value any <HEXCOLOR> without # ( ex : "FFFFFF" )
-```
+> ### Key `Backgrounds` :
+> 
+> #### Description :
+> ```markdown
+> > Allows you to define which backgrounds should be displayed.
+> > Concerns the Background Randomizer feature only.
+> ```
+> 
+> #### Value :
+> ```markdown
+> > Accepts array only.
+> Can be of any <size>, add as much backgrounds as you want.
+> ```
+> 
+> #### Usage :
+> ```json
+> // Following ex sets UI element's alpha to 17.5%
+> "Backgrounds": [ "0001.dds", "test.dds", "sky.dds", "skyrim_scenery.dds" ]
+> // Make sure to add the extension to file name or it won't work
+> // Also, it's case-sensitive, so make sure to write each file name correctly
+> ```
 
-```markdown
-[Key](SetCursorLeft) :
-> Defines the icon of the cursor next to "Press any button" text
-> Value any <ICON> existing in <SetCursorLibrary>
-## Note :
-The icon you choose here will be searched in the library you decided to use in SetCursorLibrary key, so double check you set the correct Icon IDs here.
-```
+---
 
-```markdown
-[Key](SetCursorRight) :
-> Defines the icon of the cursor next to "Press any button" text
-> Value any <ICON> existing in <SetCursorLibrary>
-## Note :
-The icon you choose here will be searched in the library you decided to use in SetCursorLibrary key, so double check you set the correct Icon IDs here.
-```
+> ### Key `Color` :
+> 
+> #### Description :
+> ```markdown
+> > Allows you to tweak color for supported UI elements.
+> > Mostly for backgrounds and texts.
+> ```
+> 
+> #### Value :
+> ```markdown
+> > Accepts string only.
+> Can be any <hexadecimal> code.
+> ```
+> 
+> #### Usage :
+> ```json
+> // Following ex sets UI element's color to a shade of black
+> "Color": "262626"
+> // Following ex sets UI element's color to red
+> "Color": "FF0000"
+> // Following ex sets UI element's color to white
+> "Color": "FFFFFF"
+> ```
 
-```markdown
-[Key](SetCursorLibrary) :
-> Defines from which library the icons should be displayed
-> Value any <LIBRARY>
-## Note :
-Note that the libraries are located in : Interface/Yggdrasil UI/Icons.
-```
+---
 
-```markdown
-[Key](SetLogo) :
-> Defines the main icon that appears during the "Press any button" state
-> Value any <ICON> existing in <SetLogoLibrary>
-## Note :
-The icon you choose here will be searched in the library you decided to use in SetLogoLibrary key, so double check you set the correct Icon IDs here.
-```
+> ### Key `Colors` :
+> 
+> #### Description :
+> ```markdown
+> > Allows you to tweak colors for supported UI elements.
+> > Concerns gradient Background feature only.
+> ```
+> 
+> #### Value :
+> ```markdown
+> > Accepts array only.
+> Can be of any <size>, add as much colors as you want.
+> ```
+> 
+> #### Usage :
+> ```json
+> // Following ex sets UI element's gradient to a shade of black
+> // Adding same color multiple times is needed if you want to tweak the spread
+> "Colors": [ "262626", "262626", "262626", "262626", "262626" ]
+> // Following ex sets UI element's gradient from red to green then blue
+> // Starts with red, goes to green, then to blue
+> "Colors": [ "FF0000", "00FF00", "0000FF" ]
+> // Following ex sets UI element's gradient from white to darker shades
+> // Adding same color multiple times is needed if you want to tweak the spread
+> "Colors": [ "FFFFFF", "EEEEEE", "DDDDDD", "CCCCCC" ]
+> ```
 
-```markdown
-[Key](SetLogoLibrary) :
-> Defines from which library the icons should be displayed
-> Value any <LIBRARY>
-## Note :
-Note that the libraries are located in : Interface/Yggdrasil UI/Icons.
-```
+---
 
-```markdown
-[Key](SetSequelColor) :
-> Defines the color of the "V" text
-> Value any <HEXCOLOR> without # ( ex : "FFFFFF" )
-## Note :
-You can change the text in the translation files located in : Interace/Yggdrasil UI/Translations.
-```
+> ### Key `Direction` :
+> 
+> #### Description :
+> ```markdown
+> > Allows you to tweak gradient direction for supported UI elements.
+> > Concerns gradient Background feature only.
+> ```
+> 
+> #### Value :
+> ```markdown
+> > Accepts string only.
+> Can be <TtoB>, <BtoT>, <LtoR>, <RtoL>, <TLtoBR>, <TRtoBL>, <BRtoTL> or <BLtoTR>.
+> ```
+> 
+> #### Usage :
+> ```json
+> // Following ex sets UI element's gradient from top to bottom
+> "Direction": "TtoB"
+> // Following ex sets UI element's gradient from right to left
+> "Direction": "RtoL"
+> // Following ex sets UI element's gradient from bottom-left to top-right
+> "Direction": "BLtoTR"
+> ```
 
-```markdown
-[Key](SetTitleColor) :
-> Defines the color of the "The Elder Scrolls" text
-> Value any <HEXCOLOR> without # ( ex : "FFFFFF" )
-## Note :
-You can change the text in the translation files located in : Interace/Yggdrasil UI/Translations.
-```
+---
 
-### Section `MAINMENU` :
-
-**/!\\** SECTION UNDER DEVELOPMENT **/!\\**
+> ### Key `Enabled` :
+> 
+> #### Description :
+> ```markdown
+> > Allows you to enable or disable some features for supported UI elements.
+> ```
+> 
+> #### Value :
+> ```markdown
+> > Accepts boolean only.
+> Can be <false> or <true>.
+> ```
+> 
+> #### Usage :
+> ```json
+> // Following ex enables related feature
+> "Enabled": true
+> // Following ex disables related feature
+> "Enabled": false
+> ```
