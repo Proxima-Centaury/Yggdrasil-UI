@@ -90,7 +90,7 @@ Download links can be found [here](#download-links).
 - [Figma ( Windows )](https://www.figma.com/download/desktop/win) ( You can stick to the online tool though, not forced to download the app )
 - [Figma ( MacOS )](https://www.figma.com/download/desktop/mac) ( You can stick to the online tool though, not forced to download the app )
 - [Gimp](https://www.gimp.org/downloads)
-- [GreenSock](https://github.com/greensock/GreenSock-AS2) ( `ActionScript 2 Library` for `Animations` and other filters )
+- [Green Sock](https://github.com/greensock/GreenSock-AS2) ( `ActionScript 2 Library` for `Animations` and other filters )
 - [JPEXS Free Flash Decompiler ( Windows )](https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version20.1.0/ffdec_20.1.0_setup.exe)
 - [JPEXS Free Flash Decompiler ( Linux )](https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version20.1.0/ffdec_20.1.0.deb)
 - [JPEXS Free Flash Decompiler ( MacOS )](https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version20.1.0/ffdec_20.1.0.pkg)
@@ -102,6 +102,7 @@ Download links can be found [here](#download-links).
 
 - [ActionScript 2.0 Documentation](https://open-flash.github.io/mirrors/as2-language-reference/index.html)
 - [ActionScript 3.0 Documentation](https://airsdk.dev/reference/actionscript/3.0)
+- [Green Sock Documentation](https://www.tud.ttu.ee/im/Jaak.Henno/FlashDevelop/greensock-as3/greensock-as3/docs/com/greensock/)
 - [Unofficial Skyrim UI SDK](https://github.com/Mardoxx/skyrimui) ( By SkyUI team )
 
 ## Credits
